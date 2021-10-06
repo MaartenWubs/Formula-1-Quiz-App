@@ -11,7 +11,7 @@ import UIKit
 struct Question {
     let ask: String
     let answers: [Answer]
-    let image: UIImage?
+    let image: String?
     let category: String
 }
 

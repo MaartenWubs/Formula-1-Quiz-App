@@ -16,6 +16,7 @@
 		32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C87270DCCAA00B5DAB5 /* Data Models.swift */; };
 		32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C89270DD11600B5DAB5 /* QuizModel.swift */; };
 		32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */; };
+		32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8E270DD9A600B5DAB5 /* History Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		32474C87270DCCAA00B5DAB5 /* Data Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data Models.swift"; sourceTree = "<group>"; };
 		32474C89270DD11600B5DAB5 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Season Questions.swift"; sourceTree = "<group>"; };
+		32474C8E270DD9A600B5DAB5 /* History Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Questions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */,
+				32474C8E270DD9A600B5DAB5 /* History Questions.swift */,
 			);
 			path = "Quiz Categories";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,
+				32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

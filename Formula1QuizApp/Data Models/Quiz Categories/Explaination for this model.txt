@@ -1,0 +1,4 @@
+These models are used for the questions. Normally this would be done using JSON and loading it in from there. I did
+it this way because i started with testdata and added on top of it. I might change it in the future to JSON. But since
+it does basically the same but as programmable objects I will keep it like thisfor now. If I notice any performance
+issues or size issues that can be solved with JSON i will switch the data source to that.

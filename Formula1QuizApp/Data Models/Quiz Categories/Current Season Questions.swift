@@ -59,6 +59,16 @@ class CurrentSeasonQuestions {
                     Answer(answer: "Barcalona, Spain", correctness: false)
                  ],
                  image: nil,
+                 category: "Current Season"),
+//6.
+        Question(ask: "What was new this season during a Formula 1 weekend?",
+                 answers: [
+                    Answer(answer: "Drivers were not allowed to walk through the paddock", correctness: false),
+                    Answer(answer: "We had sprint qualifing for a couple of races", correctness: true),
+                    Answer(answer: "The race was made longer", correctness: false),
+                    Answer(answer: "There was no press allowed on track", correctness: false)
+                 ],
+                 image: nil,
                  category: "Current Season")
     ]
 }

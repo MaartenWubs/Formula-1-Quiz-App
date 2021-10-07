@@ -17,6 +17,7 @@
 		32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C89270DD11600B5DAB5 /* QuizModel.swift */; };
 		32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */; };
 		32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8E270DD9A600B5DAB5 /* History Questions.swift */; };
+		32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		32474C89270DD11600B5DAB5 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Season Questions.swift"; sourceTree = "<group>"; };
 		32474C8E270DD9A600B5DAB5 /* History Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Questions.swift"; sourceTree = "<group>"; };
+		32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Explaination for this model.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		32474C8B270DD45D00B5DAB5 /* Quiz Categories */ = {
 			isa = PBXGroup;
 			children = (
+				32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */,
 				32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */,
 				32474C8E270DD9A600B5DAB5 /* History Questions.swift */,
 			);
@@ -156,6 +159,7 @@
 				32474C7F270DCC3300B5DAB5 /* LaunchScreen.storyboard in Resources */,
 				32474C7C270DCC3300B5DAB5 /* Assets.xcassets in Resources */,
 				32474C7A270DCC3100B5DAB5 /* Main.storyboard in Resources */,
+				32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

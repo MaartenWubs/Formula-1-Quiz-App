@@ -69,6 +69,46 @@ class CurrentSeasonQuestions {
                     Answer(answer: "There was no press allowed on track", correctness: false)
                  ],
                  image: nil,
+                 category: "Current Season"),
+//7.
+        Question(ask: "What was the reason that Max Versteppen had to start from the back of the grid in Sochi during the Grand Prix of Russia?",
+                 answers: [
+                    Answer(answer: "He blocked people during qualifing", correctness: false),
+                    Answer(answer: "He dit not do a qualifing run", correctness: false),
+                    Answer(answer: "He changed his engine", correctness: true),
+                    Answer(answer: "He made a mean comment during press interviews", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//8.
+        Question(ask: "What was so special about the end result in Monza?",
+                 answers: [
+                    Answer(answer: "It was Lewis Hamilton's 100th Grand Prix victory", correctness: false),
+                    Answer(answer: "It was the highest finish for Williams", correctness: false),
+                    Answer(answer: "It was the first victory for Carlos Sainz", correctness: false),
+                    Answer(answer: "It was McLaren's first 1, 2 finish since a long time", correctness: true)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//9.
+        Question(ask: "Why did Valterie Bottos retire from the Monaco Grand Prix?",
+                 answers: [
+                    Answer(answer: "The team was unable to get the tire of the car", correctness: true),
+                    Answer(answer: "His steering wheel came of the car", correctness: false),
+                    Answer(answer: "He had engine problems", correctness: false),
+                    Answer(answer: "He crashed into the wall", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//10.
+        Question(ask: "Qualifying For The Azerbaijan GP Equaled The Record For The Most Red Flags In A Qualifying Session, But How Many Were There?",
+                 answers: [
+                    Answer(answer: "5", correctness: false),
+                    Answer(answer: "4", correctness: true),
+                    Answer(answer: "7", correctness: false),
+                    Answer(answer: "6", correctness: false)
+                 ],
+                 image: nil,
                  category: "Current Season")
     ]
 }

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         questions.append(contentsOf: currentSeason.questions)
+        questions.shuffle()
         print(questions[3].ask)
         print(questions[3].answers[0].answer)
         print(questions[3].answers[1].answer)

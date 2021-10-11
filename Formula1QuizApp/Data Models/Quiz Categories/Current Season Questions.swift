@@ -109,6 +109,106 @@ class CurrentSeasonQuestions {
                     Answer(answer: "6", correctness: false)
                  ],
                  image: nil,
-                 category: "Current Season")
+                 category: "Current Season"),
+//11.
+        Question(ask: "Redbull used a special livery on the car during the Turkish Grand Prix. Why did they have that livery?",
+                 answers: [
+                    Answer(answer: "It was Redbulls 500th Grnad Prix", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "It was supposed to be the Japanise Grnad Prix that weekend and they did that as thank you to Honda.", correctness: true),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//12.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//13.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//14.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: true)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//15.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//16.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//17.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//18.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: true),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//19.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
+//20.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "Current Season"),
     ]
 }

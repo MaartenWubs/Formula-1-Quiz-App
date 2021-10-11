@@ -89,6 +89,126 @@ class HistoryQuestions {
                     Answer(answer: "France", correctness: true)
                  ],
                  image: nil,
+                 category: "History"),
+//9.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//10.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//11.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//12.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//13.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//14.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//15.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//16.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//17.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//18.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//19.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
+                 category: "History"),
+//20.
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false),
+                    Answer(answer: "", correctness: false)
+                 ],
+                 image: nil,
                  category: "History")
     ]
 }

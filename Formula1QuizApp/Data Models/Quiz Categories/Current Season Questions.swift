@@ -151,62 +151,62 @@ class CurrentSeasonQuestions {
                  image: nil,
                  category: "Current Season"),
 //15.
-        Question(ask: "",
+        Question(ask: "Hamilton achieved a number of things with victory in Bahrain. Which one of the below statements is correct?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "He took the 200th GP victory for a British driver", correctness: false),
+                    Answer(answer: "He won the opening race of the year for the first time since 2015", correctness: true),
+                    Answer(answer: "He moved into second in the all-time laps led list behind Michael Schumacher", correctness: false),
+                    Answer(answer: "He took his 50th win for Mercedes", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //16.
-        Question(ask: "",
+        Question(ask: "With Hamilton’s victory over Max Verstappen in Bahrain, Mercedes extended their championship-leading streak. When did this latest leading streak begin?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "Abu Dhabi 2016", correctness: false),
+                    Answer(answer: "Turkey 2020", correctness: false),
+                    Answer(answer: "Germany 2018", correctness: true),
+                    Answer(answer: "Great Britain 2019", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //17.
-        Question(ask: "",
+        Question(ask: "#44 driver Lewis Hamilton left Imola with 44 points, but what was his championship lead?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "2 points", correctness: false),
+                    Answer(answer: "1 point", correctness: true),
+                    Answer(answer: "4 points", correctness: false),
+                    Answer(answer: "3 points", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //18.
-        Question(ask: "",
+        Question(ask: "Fernando Alonso scored P8 in Portugal this season for his best result since Singapore 2018, but how did he fare at the start of the 2021 Portuguese GP?",
                  answers: [
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "Lost 2 places", correctness: true),
+                    Answer(answer: "Gained 2 places", correctness: false),
+                    Answer(answer: "Gained 5 places", correctness: false),
+                    Answer(answer: "Lost 5 places", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //19.
-        Question(ask: "",
+        Question(ask: "Hamilton converted pole #100 to victory in Spain, making this his best start to a season after four races since…",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "2013", correctness: false),
+                    Answer(answer: "2008", correctness: false),
+                    Answer(answer: "2018", correctness: false),
+                    Answer(answer: "Ever", correctness: true)
                  ],
                  image: nil,
                  category: "Current Season"),
 //20.
-        Question(ask: "",
+        Question(ask: "Who led the most laps in Spain?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "Bottas", correctness: false),
+                    Answer(answer: "Verstappen", correctness: true),
+                    Answer(answer: "Hamilton", correctness: false),
+                    Answer(answer: "Leclerc", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),

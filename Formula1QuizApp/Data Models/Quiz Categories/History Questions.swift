@@ -101,22 +101,22 @@ class HistoryQuestions {
                  image: nil,
                  category: "History"),
 //10.
-        Question(ask: "",
+        Question(ask: "The trio Hamilton, Verstappen, Bottas are the most frequent to grace the top 3 podium. But which is the most frequent PAIR of podium finishers in F1 history?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "Hamilton and Rosberg", correctness: false),
+                    Answer(answer: "Prost and Senna", correctness: false),
+                    Answer(answer: "Barrichello and Schumacher", correctness: false),
+                    Answer(answer: "Hamilton and Vettel", correctness: true)
                  ],
                  image: nil,
                  category: "History"),
 //11.
-        Question(ask: "",
+        Question(ask: "Charles Leclerc took pole position in Monaco 2021 but didn’t start the race thanks to damage sustained from his qualifying crash. How many other drivers have qualified on pole but failed to start in F1?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "3", correctness: false),
+                    Answer(answer: "1", correctness: false),
+                    Answer(answer: "2", correctness: false),
+                    Answer(answer: "4", correctness: true)
                  ],
                  image: nil,
                  category: "History"),

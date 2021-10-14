@@ -38,7 +38,7 @@ class CurrentSeasonQuestions {
                     Answer(answer: "Abbey, corner 1", correctness: false),
                     Answer(answer: "Copse, Corner 9", correctness: true)
                  ],
-                 image: nil,
+                 image: "max-lewis-silverstone",
                  category: "Current Season"),
 //4.
         Question(ask: "Which driver completed the highest mileage in 2021 pre-season testing at Bahrain?",
@@ -121,32 +121,32 @@ class CurrentSeasonQuestions {
                  image: nil,
                  category: "Current Season"),
 //12.
-        Question(ask: "",
+        Question(ask: "Lewis Hamilton Took His 100th Career Pole In F1 This Year, But At What Circuit?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "Hungary", correctness: false),
+                    Answer(answer: "Spain", correctness: true),
+                    Answer(answer: "Monaco", correctness: false),
+                    Answer(answer: "France", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //13.
-        Question(ask: "",
+        Question(ask: "How Many Positions Did Fernando Alonso Move Up In The Final Two Lap Sprint At The Azerbaijan Grand Prix?",
                  answers: [
-                    Answer(answer: "", correctness: true),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "4", correctness: true),
+                    Answer(answer: "5", correctness: false),
+                    Answer(answer: "3", correctness: false),
+                    Answer(answer: "6", correctness: false)
                  ],
                  image: nil,
                  category: "Current Season"),
 //14.
-        Question(ask: "",
+        Question(ask: "Who Was The First Driver Who Wasn’t Max Verstappen Or Lewis Hamilton To Finish In Second Place This Season?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: true)
+                    Answer(answer: "Lando Norris", correctness: false),
+                    Answer(answer: "Sebastiaan Vettel", correctness: false),
+                    Answer(answer: "Valtteri Bottas", correctness: false),
+                    Answer(answer: "Carlos Sainz", correctness: true)
                  ],
                  image: nil,
                  category: "Current Season"),

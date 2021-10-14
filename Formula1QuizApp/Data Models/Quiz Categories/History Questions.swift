@@ -91,12 +91,12 @@ class HistoryQuestions {
                  image: nil,
                  category: "History"),
 //9.
-        Question(ask: "",
+        Question(ask: "How old was Ayrton Senna when he died?",
                  answers: [
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "", correctness: false)
+                    Answer(answer: "32", correctness: false),
+                    Answer(answer: "33", correctness: false),
+                    Answer(answer: "34", correctness: true),
+                    Answer(answer: "35", correctness: false)
                  ],
                  image: nil,
                  category: "History"),

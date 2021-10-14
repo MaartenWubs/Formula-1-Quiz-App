@@ -18,6 +18,7 @@
 		32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */; };
 		32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8E270DD9A600B5DAB5 /* History Questions.swift */; };
 		32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */; };
+		32B3ABF92718A92E00D2317A /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B3ABF82718A92E00D2317A /* QuestionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Season Questions.swift"; sourceTree = "<group>"; };
 		32474C8E270DD9A600B5DAB5 /* History Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Questions.swift"; sourceTree = "<group>"; };
 		32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Explaination for this model.txt"; sourceTree = "<group>"; };
+		32B3ABF82718A92E00D2317A /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +68,10 @@
 		32474C71270DCC3000B5DAB5 /* Formula1QuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				32474C86270DCC9700B5DAB5 /* Data Models */,
 				32474C72270DCC3000B5DAB5 /* AppDelegate.swift */,
 				32474C74270DCC3000B5DAB5 /* SceneDelegate.swift */,
-				32474C76270DCC3000B5DAB5 /* ViewController.swift */,
-				32474C78270DCC3100B5DAB5 /* Main.storyboard */,
+				32B3ABF72718A91200D2317A /* Views */,
+				32474C86270DCC9700B5DAB5 /* Data Models */,
 				32474C7B270DCC3300B5DAB5 /* Assets.xcassets */,
 				32474C7D270DCC3300B5DAB5 /* LaunchScreen.storyboard */,
 				32474C80270DCC3300B5DAB5 /* Info.plist */,
@@ -96,6 +97,24 @@
 				32474C8E270DD9A600B5DAB5 /* History Questions.swift */,
 			);
 			path = "Quiz Categories";
+			sourceTree = "<group>";
+		};
+		32B3ABF72718A91200D2317A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32B3ABF82718A92E00D2317A /* QuestionsView.swift */,
+				32474C76270DCC3000B5DAB5 /* ViewController.swift */,
+				32B3ABFA2718B02300D2317A /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32B3ABFA2718B02300D2317A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				32474C78270DCC3100B5DAB5 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +193,7 @@
 				32474C73270DCC3000B5DAB5 /* AppDelegate.swift in Sources */,
 				32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */,
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
+				32B3ABF92718A92E00D2317A /* QuestionsView.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,
 				32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */,
@@ -342,7 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -370,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

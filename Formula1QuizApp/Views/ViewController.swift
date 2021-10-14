@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var questions = [Question]()
-    let currentSeason = CurrentSeasonQuestions()
+    var currentSeason = CurrentSeasonQuestions()
     var answeredQuestions = 0
     var score = 0
 
@@ -30,21 +30,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .black
         // Do any additional setup after loading the view.
         askQuestion()
     }
     
     func askQuestion() {
         questions.append(contentsOf: currentSeason.questions)
-        //questions.shuffle()
-        print(questions[2].ask)
-        print(questions[2].answers[0].answer)
-        print(questions[2].answers[1].answer)
-        print(questions[2].answers[2].answer)
-        print(questions[2].answers[3].answer)
+        questions.shuffle()
         
         questionLabel.text = questions[answeredQuestions].ask
+        questionLabel.textColor = .white
         
+        answerButton1.tintColor = .red
+        answerButton2.tintColor = .red
+        answerButton3.tintColor = .red
+        answerButton4.tintColor = .red
+
         answerButton1.setTitle(questions[answeredQuestions].answers[0].answer, for: .normal)
         answerButton2.setTitle(questions[answeredQuestions].answers[1].answer, for: .normal)
         answerButton3.setTitle(questions[answeredQuestions].answers[2].answer, for: .normal)

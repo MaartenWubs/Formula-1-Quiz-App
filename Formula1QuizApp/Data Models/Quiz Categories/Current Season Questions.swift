@@ -18,7 +18,7 @@ class CurrentSeasonQuestions {
                     Answer(answer: "Max Verstappen", correctness: false),
                     Answer(answer: "Charles Leclerc", correctness: false)
                  ],
-                 image: nil,
+                 image: "bahrain-start",
                  category: "Current Season"),
 //2.
         Question(ask: "How many laps was the Dutch Grand Prix in Zandvoort",
@@ -28,7 +28,7 @@ class CurrentSeasonQuestions {
                     Answer(answer: "72", correctness: true),
                     Answer(answer: "73", correctness: false)
                  ],
-                 image: nil,
+                 image: "dutch-gp",
                  category: "Current Season"),
 //3.
         Question(ask: "In which corner did Lewis Hamilton and Max Verstappen colide during the British Grand Prix?",

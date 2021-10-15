@@ -18,6 +18,11 @@
 		32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */; };
 		32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32474C8E270DD9A600B5DAB5 /* History Questions.swift */; };
 		32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */; };
+		3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */; };
+		3294D7CB2719B51E00D9CCE0 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */; };
+		3294D7CC2719B51E00D9CCE0 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */; };
+		3294D7CD2719B51E00D9CCE0 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7CA2719B51E00D9CCE0 /* Formula1-Wide.otf */; };
+		3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Current Season Questions.swift"; sourceTree = "<group>"; };
 		32474C8E270DD9A600B5DAB5 /* History Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History Questions.swift"; sourceTree = "<group>"; };
 		32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Explaination for this model.txt"; sourceTree = "<group>"; };
+		3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
+		3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
+		3294D7CA2719B51E00D9CCE0 /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
+		3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +81,9 @@
 				32B3ABF72718A91200D2317A /* Views */,
 				32474C86270DCC9700B5DAB5 /* Data Models */,
 				32474C7B270DCC3300B5DAB5 /* Assets.xcassets */,
+				3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */,
+				3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */,
+				3294D7CA2719B51E00D9CCE0 /* Formula1-Wide.otf */,
 				32474C7D270DCC3300B5DAB5 /* LaunchScreen.storyboard */,
 				32474C80270DCC3300B5DAB5 /* Info.plist */,
 			);
@@ -101,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				32474C76270DCC3000B5DAB5 /* ViewController.swift */,
+				3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */,
+				3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */,
 				32B3ABFA2718B02300D2317A /* Storyboards */,
 			);
 			path = Views;
@@ -173,9 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				32474C7F270DCC3300B5DAB5 /* LaunchScreen.storyboard in Resources */,
+				3294D7CB2719B51E00D9CCE0 /* Formula1-Bold.otf in Resources */,
 				32474C7C270DCC3300B5DAB5 /* Assets.xcassets in Resources */,
 				32474C7A270DCC3100B5DAB5 /* Main.storyboard in Resources */,
+				3294D7CD2719B51E00D9CCE0 /* Formula1-Wide.otf in Resources */,
 				32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */,
+				3294D7CC2719B51E00D9CCE0 /* Formula1-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +209,9 @@
 				32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */,
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
+				3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,
+				3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */,
 				32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

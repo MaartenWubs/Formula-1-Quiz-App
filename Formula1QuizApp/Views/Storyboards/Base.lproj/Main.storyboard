@@ -146,6 +146,21 @@
             </objects>
             <point key="canvasLocation" x="-88" y="799"/>
         </scene>
+        <!--Score View Controller-->
+        <scene sceneID="ARa-jf-5mF">
+            <objects>
+                <viewController storyboardIdentifier="QuizEnd" title="Score View Controller" id="8lG-bX-ZXr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TNI-G8-O09">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dxf-bh-zIc"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUI-0b-Jq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="1477"/>
+        </scene>
         <!--StartView-->
         <scene sceneID="7dM-rF-zuG">
             <objects>
@@ -233,7 +248,7 @@
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="CurrentSeasonSelected:" destination="YwF-bv-log" eventType="touchUpInside" id="68m-si-8d7"/>
+                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="67y-fY-lJJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QME-Y2-2oW">
@@ -253,14 +268,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-E8-4nz">
+                                <rect key="frame" x="20" y="530" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ihz-mP-gE3"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Current Season">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Formula1-Display-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="History">
+                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="IDY-R2-A4S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NDS-ac-gS3"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NDS-ac-gS3" secondAttribute="leading" id="Eko-1G-GLK"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="trailing" secondItem="Iq9-pM-JED" secondAttribute="trailingMargin" id="HA5-TR-ikW"/>
+                            <constraint firstItem="qJf-E8-4nz" firstAttribute="leading" secondItem="gbB-56-lhm" secondAttribute="leading" id="Kj4-Za-iJV"/>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="top" secondItem="Iq9-pM-JED" secondAttribute="topMargin" id="Lml-lt-fof"/>
+                            <constraint firstItem="qJf-E8-4nz" firstAttribute="top" secondItem="gbB-56-lhm" secondAttribute="bottom" constant="45" id="TNA-V3-Aie"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="top" secondItem="NDS-ac-gS3" secondAttribute="top" constant="39" id="UQy-Hq-1jA"/>
+                            <constraint firstItem="qJf-E8-4nz" firstAttribute="trailing" secondItem="gbB-56-lhm" secondAttribute="trailing" id="VDl-Q7-zlt"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="leading" secondItem="Iq9-pM-JED" secondAttribute="leadingMargin" id="aE5-KV-Mqw"/>
                             <constraint firstItem="NDS-ac-gS3" firstAttribute="bottom" secondItem="gbB-56-lhm" secondAttribute="bottom" constant="377" id="ahK-TL-9qw"/>
                             <constraint firstItem="NDS-ac-gS3" firstAttribute="trailing" secondItem="QME-Y2-2oW" secondAttribute="trailing" constant="20" id="gxI-a6-lto"/>
@@ -271,6 +312,7 @@
                     <navigationItem key="navigationItem" id="gmX-O3-sCA"/>
                     <connections>
                         <outlet property="currentSeasonButton" destination="gbB-56-lhm" id="o8P-E0-B0o"/>
+                        <outlet property="historyButton" destination="qJf-E8-4nz" id="fDn-7N-gkv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmj-Iu-1DG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

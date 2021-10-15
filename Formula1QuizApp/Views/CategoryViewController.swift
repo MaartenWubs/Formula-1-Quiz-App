@@ -11,25 +11,43 @@ class CategoryViewController: UIViewController {
 
     //Outlets
     @IBOutlet var currentSeasonButton: UIButton!
+    @IBOutlet var historyButton: UIButton!
     
+    //Quiz properties
+    let currentSeason = CurrentSeasonQuestions()
+    let history = HistoryQuestions()
     
     //Action
-    @IBAction func CurrentSeasonSelected(_ sender: UIButton) {
-        print("pressed")
+    @IBAction func QuizButtonPressed(_ sender: UIButton) {
+        print("pressed") //DEBUG purposes
+        
+        //Search the main storyboard file
         let storyboard: UIStoryboard = UIStoryboard(name: "Main",
                                                     bundle: nil)
-        
+        //Search the view controller with "QuizView" as ID
         let quizView = storyboard.instantiateViewController(withIdentifier: "QuizView") as! QuizViewController
         
+        //Check which button is pressed and load the correct array of questions
+        if sender.tag == 0 {
+            quizView.quiz = currentSeason.questions
+        } else if sender.tag == 1 {
+            quizView.quiz = history.questions
+        }
+        
+        //present the new view
         navigationController?.pushViewController(quizView,
                                                  animated: true)
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentSeasonButton.tintColor = .red
+        historyButton.tintColor = .red
     }
     
+    
+    //This is to hide the back button in the view
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(true,

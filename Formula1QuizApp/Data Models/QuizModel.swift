@@ -8,10 +8,6 @@
 import Foundation
 
 class QuizModel {
-    public var questions = [Question]()
-    
-    let currentSeasonQuestions = CurrentSeasonQuestions()
-    
-    func addQuestions() {
-    }
+    public let currentSeasonQuiz = CurrentSeasonQuestions()
+    public let historyQuiz = HistoryQuestions()
 }

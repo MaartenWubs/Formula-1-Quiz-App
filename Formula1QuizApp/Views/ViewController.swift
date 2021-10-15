@@ -9,12 +9,12 @@ import UIKit
 
 class QuizViewController: UIViewController {
     var questions = [Question]()
-    var currentSeason = CurrentSeasonQuestions()
-    var historyQuestions = HistoryQuestions()
+    var quiz: [Question]!
     var answeredQuestions = 0
     var score = 0
+    
 
-    //Outlets
+    //MARK: Outlets
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerButton1: UIButton!
     @IBOutlet var answerButton2: UIButton!
@@ -24,16 +24,34 @@ class QuizViewController: UIViewController {
     @IBOutlet var quitButton: UIButton!
     @IBOutlet var questionAmount: UILabel!
     
-    //Action
+    //MARK: Action
+    //Answer button pressed
     @IBAction func buttonePressed(_ sender: UIButton) {
+        //Add one to the answered quiestions
         answeredQuestions += 1
-        askQuestion()
+        
         print("Pressed")
+        
+        //Check if answeredQuestions is less then 20 to continue.
+        if answeredQuestions < 20 {
+            askQuestion()
+        } else {
+            endQuiz()
+        }
+        
+        //Code logic to calculate score
+        if questions[answeredQuestions].answers[sender.tag].correctness == true {
+            score += 10
+        }
+        
     }
     
+    //Quit button pressed
     @IBAction func PressedQuit(_ sender: UIButton) {
+        //reset scores
         answeredQuestions = 0
         score = 0
+        //return to the catagory view
         let storyboard: UIStoryboard = UIStoryboard(name: "Main",
                                                     bundle: nil)
         
@@ -43,12 +61,25 @@ class QuizViewController: UIViewController {
                                                  animated: true)
     }
     
+    private func endQuiz() {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main",
+                                                    bundle: nil)
+        
+        let scoreView = storyboard.instantiateViewController(withIdentifier: "QuizEnd") as! ScoreViewController
+        scoreView.endScore = score
+        
+        navigationController?.pushViewController(scoreView,
+                                                 animated: true)
+    }
+    
     override func viewDidLoad() {
+        answeredQuestions = 0
+        score = 0
         super.viewDidLoad()
         view.backgroundColor = .black
         
-        currentSeason.questions.shuffle()
-        questions.append(contentsOf: currentSeason.questions.prefix(upTo: 20))
+        quiz.shuffle()
+        questions.append(contentsOf: quiz.prefix(upTo: 20))
 
         answerButton1.tintColor = .red
         answerButton2.tintColor = .red

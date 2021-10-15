@@ -24,7 +24,8 @@ class StartViewController: UIViewController {
         
         let categoryView = storyboard.instantiateViewController(withIdentifier: "CatergoryView") as! CategoryViewController
         
-        show(categoryView, sender: self)
+        navigationController?.pushViewController(categoryView,
+                                                 animated: true)
     }
 
 }

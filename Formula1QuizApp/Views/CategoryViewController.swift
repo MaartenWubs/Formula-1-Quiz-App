@@ -21,8 +21,10 @@ class CategoryViewController: UIViewController {
         
         let quizView = storyboard.instantiateViewController(withIdentifier: "QuizView") as! QuizViewController
         
-        show(quizView, sender: self)
+        navigationController?.pushViewController(quizView,
+                                                 animated: true)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentSeasonButton.tintColor = .red
@@ -30,11 +32,13 @@ class CategoryViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true,
+                                                          animated: true)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(false,
+                                                          animated: true)
     }
 }

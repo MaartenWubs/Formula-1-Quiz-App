@@ -6,20 +6,24 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class QuizViewController: UIViewController {
+    
+    //MARK: Properties
     var questions = [Question]()
     var quiz: [Question]!
     var answeredQuestions = 0
+    var answerdCorretly = 0
     var score = 0
     
 
     //MARK: Outlets
     @IBOutlet var questionLabel: UILabel!
-    @IBOutlet var answerButton1: UIButton!
-    @IBOutlet var answerButton2: UIButton!
-    @IBOutlet var answerButton3: UIButton!
-    @IBOutlet var answerButton4: UIButton!
+    @IBOutlet var answerButton1: MDCButton!
+    @IBOutlet var answerButton2: MDCButton!
+    @IBOutlet var answerButton3: MDCButton!
+    @IBOutlet var answerButton4: MDCButton!
     @IBOutlet var image: UIImageView!
     @IBOutlet var quitButton: UIButton!
     @IBOutlet var questionAmount: UILabel!
@@ -27,6 +31,12 @@ class QuizViewController: UIViewController {
     //MARK: Action
     //Answer button pressed
     @IBAction func buttonePressed(_ sender: UIButton) {
+        //Code logic to calculate score
+        if questions[answeredQuestions].answers[sender.tag].correctness == true {
+            score += 5
+            answerdCorretly += 1
+        }
+        
         //Add one to the answered quiestions
         answeredQuestions += 1
         
@@ -38,12 +48,6 @@ class QuizViewController: UIViewController {
         } else {
             endQuiz()
         }
-        
-        //Code logic to calculate score
-        if questions[answeredQuestions].answers[sender.tag].correctness == true {
-            score += 10
-        }
-        
     }
     
     //Quit button pressed
@@ -67,11 +71,13 @@ class QuizViewController: UIViewController {
         
         let scoreView = storyboard.instantiateViewController(withIdentifier: "QuizEnd") as! ScoreViewController
         scoreView.endScore = score
+        scoreView.answeredCorretly = answerdCorretly
         
         navigationController?.pushViewController(scoreView,
                                                  animated: true)
     }
     
+    //MARK: View Code
     override func viewDidLoad() {
         answeredQuestions = 0
         score = 0

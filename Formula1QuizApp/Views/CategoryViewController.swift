@@ -39,6 +39,14 @@ class CategoryViewController: UIViewController {
                                                  animated: true)
     }
     
+    @IBAction func ProfilePressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main",
+                                      bundle: nil)
+        let profileView = storyboard.instantiateViewController(withIdentifier: "ProfilePage") as! ProfileViewController
+        navigationController?.pushViewController(profileView,
+                                                 animated: true)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

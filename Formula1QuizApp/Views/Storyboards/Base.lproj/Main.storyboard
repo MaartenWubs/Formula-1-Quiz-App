@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FLS-AR-IPQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FLS-AR-IPQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Formula1-Bold.otf">
+            <string>Formula1-Display-Bold</string>
+        </array>
         <array key="Formula1-Regular.otf">
             <string>Formula1-Display-Regular</string>
         </array>
@@ -32,7 +35,7 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 1">
+                                <buttonConfiguration key="configuration" style="filled" title="Answer 1" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -43,7 +46,7 @@
                                 <rect key="frame" x="20" y="565" width="374" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 2">
+                                <buttonConfiguration key="configuration" style="filled" title="Answer 2" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -56,17 +59,17 @@
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-sK-phI" userLabel="AnswerButton3">
                                 <rect key="frame" x="19.5" y="654.5" width="375" height="51"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 3">
+                                <buttonConfiguration key="configuration" style="filled" title="Answer 3" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ges-Av-iCf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-l4-d3W" userLabel="AnswerButton4">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-l4-d3W" userLabel="AnswerButton4">
                                 <rect key="frame" x="20" y="743.5" width="374" height="52"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 4">
+                                <buttonConfiguration key="configuration" style="filled" title="Answer 4" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -149,17 +152,71 @@
         <!--Score View Controller-->
         <scene sceneID="ARa-jf-5mF">
             <objects>
-                <viewController storyboardIdentifier="QuizEnd" title="Score View Controller" id="8lG-bX-ZXr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuizEnd" title="Score View Controller" id="8lG-bX-ZXr" customClass="ScoreViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNI-G8-O09">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBG-4H-WlR">
+                                <rect key="frame" x="20" y="88" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Y2h-63-GID"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You answered 19 out of 20 questions correctly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqR-4o-kLw">
+                                <rect key="frame" x="20" y="131" width="374" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="CmV-HT-wr2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzO-sC-9CT">
+                                <rect key="frame" x="20" y="238" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="x2f-Vh-eWT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Formula1-Display-Bold" family="Formula1" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX5-aA-ivc">
+                                <rect key="frame" x="20" y="652" width="374" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="1yp-lo-oho"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Exit">
+                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dxf-bh-zIc"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VBG-4H-WlR" firstAttribute="trailing" secondItem="TNI-G8-O09" secondAttribute="trailingMargin" id="CRn-Db-7gL"/>
+                            <constraint firstItem="VBG-4H-WlR" firstAttribute="trailing" secondItem="WqR-4o-kLw" secondAttribute="trailing" id="CZK-Nf-eka"/>
+                            <constraint firstItem="WqR-4o-kLw" firstAttribute="leading" secondItem="zzO-sC-9CT" secondAttribute="leading" id="EZk-fe-sYO"/>
+                            <constraint firstItem="WqR-4o-kLw" firstAttribute="top" secondItem="VBG-4H-WlR" secondAttribute="bottom" constant="22" id="F3X-P7-wKV"/>
+                            <constraint firstItem="VBG-4H-WlR" firstAttribute="leading" secondItem="TNI-G8-O09" secondAttribute="leadingMargin" id="MqJ-qp-0N8"/>
+                            <constraint firstItem="VBG-4H-WlR" firstAttribute="leading" secondItem="WqR-4o-kLw" secondAttribute="leading" id="NVT-aS-t1e"/>
+                            <constraint firstItem="VBG-4H-WlR" firstAttribute="top" secondItem="dxf-bh-zIc" secondAttribute="top" constant="44" id="QAV-R5-tTj"/>
+                            <constraint firstItem="WqR-4o-kLw" firstAttribute="trailing" secondItem="zzO-sC-9CT" secondAttribute="trailing" id="XIZ-5S-hHW"/>
+                            <constraint firstItem="dxf-bh-zIc" firstAttribute="bottom" secondItem="YX5-aA-ivc" secondAttribute="bottom" constant="158" id="ZbJ-7w-lJh"/>
+                            <constraint firstItem="zzO-sC-9CT" firstAttribute="trailing" secondItem="YX5-aA-ivc" secondAttribute="trailing" id="kK6-VJ-vlf"/>
+                            <constraint firstItem="zzO-sC-9CT" firstAttribute="top" secondItem="WqR-4o-kLw" secondAttribute="bottom" constant="41" id="mC5-w7-sX2"/>
+                            <constraint firstItem="zzO-sC-9CT" firstAttribute="leading" secondItem="YX5-aA-ivc" secondAttribute="leading" id="ucE-GB-qkk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUI-0b-Jq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="1477"/>
+            <point key="canvasLocation" x="-88.405797101449281" y="1476.5625"/>
         </scene>
         <!--StartView-->
         <scene sceneID="7dM-rF-zuG">
@@ -252,12 +309,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QME-Y2-2oW">
-                                <rect key="frame" x="350" y="44" width="44" height="31"/>
+                                <rect key="frame" x="345" y="44" width="49" height="34"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" subtitle="">
                                     <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ProfilePressed:" destination="YwF-bv-log" eventType="touchUpInside" id="hdP-CI-N7P"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-I9-5J4">
                                 <rect key="frame" x="20" y="83" width="374" height="50"/>
@@ -318,6 +378,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmj-Iu-1DG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-87" y="141"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="Vzj-eV-t0I">
+            <objects>
+                <viewController storyboardIdentifier="ProfilePage" id="T2c-i0-4So" customClass="ProfileViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jjn-ss-geR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ctY-RB-63e"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X93-1T-xB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="882.60869565217399" y="140.625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXr-NR-6SC">

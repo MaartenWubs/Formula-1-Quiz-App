@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class StartViewController: UIViewController {
 
-    @IBOutlet var startButton: UIButton!
+    @IBOutlet var startButton: MDCButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

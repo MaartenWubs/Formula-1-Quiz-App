@@ -28,6 +28,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-pv-9WE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xc-oK-xeU" userLabel="AnswerButton1">
                                 <rect key="frame" x="20" y="475.5" width="374" height="51.5"/>
                                 <constraints>
@@ -113,14 +116,18 @@
                             <constraint firstItem="BH6-l4-d3W" firstAttribute="centerX" secondItem="Qzs-sK-phI" secondAttribute="centerX" id="FoV-Hz-px9"/>
                             <constraint firstItem="1xc-oK-xeU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wWx-Wd-XdN" secondAttribute="trailing" id="GON-9J-u4b"/>
                             <constraint firstItem="wWx-Wd-XdN" firstAttribute="centerX" secondItem="1xc-oK-xeU" secondAttribute="centerX" id="JG8-hg-pv5"/>
+                            <constraint firstItem="u0N-pv-9WE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ld8-8v-baq"/>
                             <constraint firstItem="1xc-oK-xeU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BcZ-K6-24j" secondAttribute="trailing" id="Nk4-iy-Wbp"/>
                             <constraint firstItem="BH6-l4-d3W" firstAttribute="height" secondItem="Qzs-sK-phI" secondAttribute="height" multiplier="1.01961" id="OQW-bY-e7M"/>
+                            <constraint firstItem="u0N-pv-9WE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PJK-eA-bZp"/>
                             <constraint firstItem="Qzs-sK-phI" firstAttribute="top" secondItem="wWx-Wd-XdN" secondAttribute="bottom" constant="38" id="PgQ-rG-wb9"/>
                             <constraint firstItem="Qzs-sK-phI" firstAttribute="centerX" secondItem="wWx-Wd-XdN" secondAttribute="centerX" id="Qpf-6z-X9N"/>
                             <constraint firstItem="wWx-Wd-XdN" firstAttribute="top" secondItem="1xc-oK-xeU" secondAttribute="bottom" constant="38" id="U3V-ZU-WlR"/>
                             <constraint firstItem="yP5-dp-EEv" firstAttribute="firstBaseline" secondItem="cnh-K2-aVb" secondAttribute="baseline" id="bFB-Kr-khh"/>
                             <constraint firstItem="1xc-oK-xeU" firstAttribute="centerX" secondItem="BcZ-K6-24j" secondAttribute="centerX" id="bFl-gD-TCw"/>
                             <constraint firstItem="wpc-La-e8g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="cN6-OQ-56O"/>
+                            <constraint firstItem="u0N-pv-9WE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="gbR-CL-sBI"/>
+                            <constraint firstItem="u0N-pv-9WE" firstAttribute="centerX" secondItem="BH6-l4-d3W" secondAttribute="centerX" id="hi2-Xm-ZU9"/>
                             <constraint firstItem="wWx-Wd-XdN" firstAttribute="height" secondItem="1xc-oK-xeU" secondAttribute="height" id="htw-oC-DpI"/>
                             <constraint firstItem="1xc-oK-xeU" firstAttribute="top" secondItem="BcZ-K6-24j" secondAttribute="bottom" constant="57.5" id="i3k-lR-Xkv"/>
                             <constraint firstItem="1xc-oK-xeU" firstAttribute="top" secondItem="BcZ-K6-24j" secondAttribute="bottom" constant="57.5" id="iuq-Sc-N7F"/>
@@ -139,6 +146,7 @@
                         <outlet property="answerButton2" destination="wWx-Wd-XdN" id="sgR-fh-aL2"/>
                         <outlet property="answerButton3" destination="Qzs-sK-phI" id="egs-YX-Q4e"/>
                         <outlet property="answerButton4" destination="BH6-l4-d3W" id="fpV-xt-hoM"/>
+                        <outlet property="backgroundImage" destination="u0N-pv-9WE" id="19y-ga-SRo"/>
                         <outlet property="image" destination="BcZ-K6-24j" id="5ky-fi-pVf"/>
                         <outlet property="questionAmount" destination="yP5-dp-EEv" id="1xk-kB-JbH"/>
                         <outlet property="questionLabel" destination="wpc-La-e8g" id="VJp-5W-yPC"/>
@@ -147,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-88" y="799"/>
+            <point key="canvasLocation" x="-88.405797101449281" y="798.88392857142856"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="ARa-jf-5mF">
@@ -157,6 +165,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="5Rk-2V-eWb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBG-4H-WlR">
                                 <rect key="frame" x="20" y="88" width="374" height="21"/>
                                 <constraints>
@@ -218,6 +230,7 @@
                     </view>
                     <connections>
                         <outlet property="amountOfQuestionsAnsweredLabel" destination="WqR-4o-kLw" id="LbY-OD-YhW"/>
+                        <outlet property="bacgroundImage" destination="5Rk-2V-eWb" id="RnE-5d-iNk"/>
                         <outlet property="exitButton" destination="YX5-aA-ivc" id="P9b-vk-LOC"/>
                         <outlet property="scoreTitleLabel" destination="VBG-4H-WlR" id="Tnq-J9-3Kx"/>
                         <outlet property="totalScoreLabel" destination="zzO-sC-9CT" id="JQr-LA-505"/>

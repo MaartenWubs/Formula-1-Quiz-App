@@ -27,6 +27,7 @@ class QuizViewController: UIViewController {
     @IBOutlet var image: UIImageView!
     @IBOutlet var quitButton: UIButton!
     @IBOutlet var questionAmount: UILabel!
+    @IBOutlet var backgroundImage: UIImageView!
     
     //MARK: Action
     //Answer button pressed
@@ -81,6 +82,8 @@ class QuizViewController: UIViewController {
         score = 0
         super.viewDidLoad()
         view.backgroundColor = .black
+        backgroundImage.layer.opacity = 0.3
+        backgroundImage.translatesAutoresizingMaskIntoConstraints = false
         
         quiz.shuffle()
         questions.append(contentsOf: quiz.prefix(upTo: 20))
@@ -92,6 +95,10 @@ class QuizViewController: UIViewController {
         
         askQuestion()
         
+        NSLayoutConstraint.activate([
+            backgroundImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            backgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
     
     func askQuestion() {

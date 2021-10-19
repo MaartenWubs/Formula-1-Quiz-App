@@ -17,9 +17,12 @@ class ScoreViewController: UIViewController {
     @IBOutlet var amountOfQuestionsAnsweredLabel: UILabel!
     @IBOutlet var totalScoreLabel: UILabel!
     @IBOutlet var exitButton: UIButton!
+    @IBOutlet var bacgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bacgroundImage.layer.opacity = 0.3
+        bacgroundImage.translatesAutoresizingMaskIntoConstraints = false
         
         exitButton.tintColor = .red
         
@@ -33,6 +36,11 @@ class ScoreViewController: UIViewController {
         
         amountOfQuestionsAnsweredLabel.text = "You answered \(answeredCorretly ?? 0) out of 20 questions correctly"
         totalScoreLabel.text = "Your score is \(endScore ?? 0)%"
+        
+        NSLayoutConstraint.activate([
+            bacgroundImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            bacgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
     
     @IBAction func pressedExit(_ sender: UIButton) {

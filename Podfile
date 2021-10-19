@@ -7,5 +7,6 @@ target 'Formula1QuizApp' do
 
   # Pods for Formula1QuizApp
 	pod 'MaterialComponents/Buttons'
+	pod 'GoogleSignIn'
 
 end

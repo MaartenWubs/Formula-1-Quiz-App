@@ -11,11 +11,13 @@ import MaterialComponents
 class StartViewController: UIViewController {
 
     @IBOutlet var startButton: MDCButton!
+    @IBOutlet var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         startButton.tintColor = .red
+        backgroundImageView.layer.opacity = 0.40
     }
     
     @IBAction func PressedStart(_ sender: UIButton) {

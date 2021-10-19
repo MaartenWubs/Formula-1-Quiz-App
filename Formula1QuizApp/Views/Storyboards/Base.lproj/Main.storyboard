@@ -235,6 +235,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="SDG-bv-CB4">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVj-BM-nXg">
                                 <rect key="frame" x="20" y="418" width="374" height="60"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
@@ -267,24 +270,29 @@
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="leading" secondItem="mUu-V2-Ion" secondAttribute="leadingMargin" id="2j4-l2-Wy9"/>
                             <constraint firstItem="vVj-BM-nXg" firstAttribute="centerY" secondItem="mUu-V2-Ion" secondAttribute="centerY" id="6M5-Th-z5T"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="leading" secondItem="vVj-BM-nXg" secondAttribute="leading" id="CIT-0J-4Fk"/>
+                            <constraint firstItem="SDG-bv-CB4" firstAttribute="top" secondItem="mUu-V2-Ion" secondAttribute="topMargin" constant="-88" id="JNb-X2-hiY"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="trailing" secondItem="vVj-BM-nXg" secondAttribute="trailing" id="Kww-9e-jLv"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="top" secondItem="gJX-y4-Nkl" secondAttribute="top" id="OUf-96-lcA"/>
+                            <constraint firstItem="SDG-bv-CB4" firstAttribute="leading" secondItem="gJX-y4-Nkl" secondAttribute="leading" id="RGs-5c-owd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SDG-bv-CB4" secondAttribute="trailing" constant="-34" id="S0R-wV-15e"/>
                             <constraint firstItem="opK-gJ-D7H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gJX-y4-Nkl" secondAttribute="leading" id="SAM-oU-2aQ"/>
                             <constraint firstItem="gJX-y4-Nkl" firstAttribute="trailing" secondItem="opK-gJ-D7H" secondAttribute="trailing" constant="49" id="XCI-IQ-Xbt"/>
                             <constraint firstItem="gJX-y4-Nkl" firstAttribute="bottom" secondItem="vVj-BM-nXg" secondAttribute="bottom" constant="384" id="fYq-Jr-Tey"/>
                             <constraint firstItem="opK-gJ-D7H" firstAttribute="top" secondItem="gJX-y4-Nkl" secondAttribute="top" constant="147" id="jVi-yR-85F"/>
+                            <constraint firstItem="SDG-bv-CB4" firstAttribute="centerY" secondItem="vVj-BM-nXg" secondAttribute="centerY" id="tu9-Sx-pJq"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="trailing" secondItem="mUu-V2-Ion" secondAttribute="trailingMargin" id="w1d-ZZ-xiK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qLX-i0-3UR"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="SDG-bv-CB4" id="vLd-jB-WDO"/>
                         <outlet property="startButton" destination="vVj-BM-nXg" id="d4r-2Y-58V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kb-A1-hQg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3vj-eT-WI2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="-515"/>
+            <point key="canvasLocation" x="-86.956521739130437" y="-515.625"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="23l-gg-noE">
@@ -432,10 +440,25 @@
             </objects>
             <point key="canvasLocation" x="713" y="141"/>
         </scene>
+        <!--Your Profile View Controller-->
+        <scene sceneID="Wvf-Xg-4Af">
+            <objects>
+                <viewController storyboardIdentifier="Your Profile" id="3xH-N6-WFb" customClass="YourProfileViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bv-xL-lP6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lc4-Fe-CoK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1c1-9B-hRl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="-549"/>
+        </scene>
         <!--Settings View Controller-->
         <scene sceneID="AO4-lz-rcy">
             <objects>
-                <viewController storyboardIdentifier="SettingsPage" id="MyX-fN-KOL" customClass="SettingsViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" id="MyX-fN-KOL" customClass="SettingsViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uIe-I8-h9M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,6 +469,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R84-Q1-qFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1528" y="141"/>
+        </scene>
+        <!--Leader Board View Controller-->
+        <scene sceneID="dtb-N9-CEM">
+            <objects>
+                <viewController storyboardIdentifier="Leaderboard (Coming Soon)" id="TYb-25-bwn" customClass="LeaderBoardViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wv5-Yo-VRh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zfY-FZ-Vaq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="llS-8U-96S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="810"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXr-NR-6SC">
@@ -468,6 +506,7 @@
     </scenes>
     <resources>
         <image name="F1-logo" width="3840" height="2160"/>
+        <image name="start-page-picture" width="1920" height="1080"/>
         <image name="text.justify" catalog="system" width="128" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

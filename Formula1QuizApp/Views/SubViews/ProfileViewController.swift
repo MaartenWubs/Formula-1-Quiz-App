@@ -10,7 +10,8 @@ import AuthenticationServices
 
 class ProfileViewController: UITableViewController {
     
-    let pageCategories = ["Profile", "Settings", "Leaderboard (Comming Soon)"]
+    let pageCategories = ["Your Profile", "Settings", "Leaderboard (Coming Soon)"]
+    let pageCategoriesViews = [YourProfileViewController.self, SettingsViewController.self, LeaderBoardViewController.self]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class ProfileViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let view = UIStoryboard(name: "Main", bundle: nil)
-        let controller = view.instantiateViewController(withIdentifier: "SettingsPage")
+        let controller = view.instantiateViewController(withIdentifier: pageCategories[indexPath.row])
         navigationController?.pushViewController(controller, animated: true)
     }
 

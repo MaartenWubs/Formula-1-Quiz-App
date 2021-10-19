@@ -22,6 +22,8 @@
 		32474C91270E1A8E00B5DAB5 /* Explaination for this model.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */; };
 		324F8AAE271C0EDD004423D2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F8AAD271C0EDD004423D2 /* SettingsViewController.swift */; };
 		324F8AB0271C12E3004423D2 /* Driver Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F8AAF271C12E3004423D2 /* Driver Questions.swift */; };
+		324F8AB2271E9B38004423D2 /* YourProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F8AB1271E9B38004423D2 /* YourProfileViewController.swift */; };
+		324F8AB4271E9B45004423D2 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324F8AB3271E9B45004423D2 /* LeaderBoardViewController.swift */; };
 		3253B5322719F0F10039AA63 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B5312719F0F10039AA63 /* ScoreViewController.swift */; };
 		3253B534271ADE390039AA63 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B533271ADE390039AA63 /* ProfileViewController.swift */; };
 		3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */; };
@@ -62,6 +64,8 @@
 		32474C90270E1A8E00B5DAB5 /* Explaination for this model.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Explaination for this model.txt"; sourceTree = "<group>"; };
 		324F8AAD271C0EDD004423D2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		324F8AAF271C12E3004423D2 /* Driver Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Driver Questions.swift"; sourceTree = "<group>"; };
+		324F8AB1271E9B38004423D2 /* YourProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
+		324F8AB3271E9B45004423D2 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		3253B5312719F0F10039AA63 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		3253B533271ADE390039AA63 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				3253B533271ADE390039AA63 /* ProfileViewController.swift */,
+				324F8AB1271E9B38004423D2 /* YourProfileViewController.swift */,
+				324F8AB3271E9B45004423D2 /* LeaderBoardViewController.swift */,
 				324F8AAD271C0EDD004423D2 /* SettingsViewController.swift */,
 			);
 			path = SubViews;
@@ -312,11 +318,13 @@
 				32474C73270DCC3000B5DAB5 /* AppDelegate.swift in Sources */,
 				32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */,
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
+				324F8AB4271E9B45004423D2 /* LeaderBoardViewController.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
 				3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */,
 				3253B534271ADE390039AA63 /* ProfileViewController.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,
 				324F8AB0271C12E3004423D2 /* Driver Questions.swift in Sources */,
+				324F8AB2271E9B38004423D2 /* YourProfileViewController.swift in Sources */,
 				3253B5322719F0F10039AA63 /* ScoreViewController.swift in Sources */,
 				3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */,
 				32474C8F270DD9A600B5DAB5 /* History Questions.swift in Sources */,

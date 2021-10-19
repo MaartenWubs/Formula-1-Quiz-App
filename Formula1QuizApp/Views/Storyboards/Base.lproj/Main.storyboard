@@ -249,10 +249,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="SDG-bv-CB4">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="1080"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVj-BM-nXg">
-                                <rect key="frame" x="20" y="418" width="374" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVj-BM-nXg">
+                                <rect key="frame" x="20" y="434" width="110.5" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Start">
@@ -281,18 +282,13 @@
                         <constraints>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="bottom" secondItem="opK-gJ-D7H" secondAttribute="bottom" id="0oB-oz-vPN"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="leading" secondItem="mUu-V2-Ion" secondAttribute="leadingMargin" id="2j4-l2-Wy9"/>
-                            <constraint firstItem="vVj-BM-nXg" firstAttribute="centerY" secondItem="mUu-V2-Ion" secondAttribute="centerY" id="6M5-Th-z5T"/>
-                            <constraint firstItem="AwB-TI-XV0" firstAttribute="leading" secondItem="vVj-BM-nXg" secondAttribute="leading" id="CIT-0J-4Fk"/>
                             <constraint firstItem="SDG-bv-CB4" firstAttribute="top" secondItem="mUu-V2-Ion" secondAttribute="topMargin" constant="-88" id="JNb-X2-hiY"/>
-                            <constraint firstItem="AwB-TI-XV0" firstAttribute="trailing" secondItem="vVj-BM-nXg" secondAttribute="trailing" id="Kww-9e-jLv"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="top" secondItem="gJX-y4-Nkl" secondAttribute="top" id="OUf-96-lcA"/>
                             <constraint firstItem="SDG-bv-CB4" firstAttribute="leading" secondItem="gJX-y4-Nkl" secondAttribute="leading" id="RGs-5c-owd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SDG-bv-CB4" secondAttribute="trailing" constant="-34" id="S0R-wV-15e"/>
                             <constraint firstItem="opK-gJ-D7H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gJX-y4-Nkl" secondAttribute="leading" id="SAM-oU-2aQ"/>
                             <constraint firstItem="gJX-y4-Nkl" firstAttribute="trailing" secondItem="opK-gJ-D7H" secondAttribute="trailing" constant="49" id="XCI-IQ-Xbt"/>
-                            <constraint firstItem="gJX-y4-Nkl" firstAttribute="bottom" secondItem="vVj-BM-nXg" secondAttribute="bottom" constant="384" id="fYq-Jr-Tey"/>
                             <constraint firstItem="opK-gJ-D7H" firstAttribute="top" secondItem="gJX-y4-Nkl" secondAttribute="top" constant="147" id="jVi-yR-85F"/>
-                            <constraint firstItem="SDG-bv-CB4" firstAttribute="centerY" secondItem="vVj-BM-nXg" secondAttribute="centerY" id="tu9-Sx-pJq"/>
                             <constraint firstItem="AwB-TI-XV0" firstAttribute="trailing" secondItem="mUu-V2-Ion" secondAttribute="trailingMargin" id="w1d-ZZ-xiK"/>
                         </constraints>
                     </view>
@@ -425,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="-88.405797101449281" y="140.625"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="vJC-Ol-mtc">
             <objects>
-                <tableViewController storyboardIdentifier="ProfilePage" id="os7-Pa-U6n" customClass="ProfileViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuPage" id="os7-Pa-U6n" customClass="MenuViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fiJ-il-XXs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

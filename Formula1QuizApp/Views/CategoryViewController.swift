@@ -43,7 +43,7 @@ class CategoryViewController: UIViewController {
     @IBAction func ProfilePressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main",
                                       bundle: nil)
-        let profileView = storyboard.instantiateViewController(withIdentifier: "ProfilePage") as! ProfileViewController
+        let profileView = storyboard.instantiateViewController(withIdentifier: "MenuPage") as! MenuViewController
         navigationController?.pushViewController(profileView,
                                                  animated: true)
     }

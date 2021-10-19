@@ -8,7 +8,7 @@
 import UIKit
 import AuthenticationServices
 
-class ProfileViewController: UITableViewController {
+class MenuViewController: UITableViewController {
     
     let pageCategories = ["Your Profile", "Settings", "Leaderboard (Coming Soon)"]
     let pageCategoriesViews = [YourProfileViewController.self, SettingsViewController.self, LeaderBoardViewController.self]
@@ -28,6 +28,7 @@ class ProfileViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "pageCell", for: indexPath)
         cell.textLabel?.text = pageCategories[indexPath.row]
         cell.textLabel?.textColor = .white
+        cell.textLabel?.font = UIFont(name: "Formula1 Display Regular", size: 20)
         cell.backgroundColor = .black
         cell.accessoryType = .disclosureIndicator
         return cell

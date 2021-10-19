@@ -29,7 +29,7 @@
 		324F8ABB271F3782004423D2 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 324F8ABA271F3782004423D2 /* FacebookLogin */; };
 		324F8ABD271F3782004423D2 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 324F8ABC271F3782004423D2 /* FacebookShare */; };
 		3253B5322719F0F10039AA63 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B5312719F0F10039AA63 /* ScoreViewController.swift */; };
-		3253B534271ADE390039AA63 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B533271ADE390039AA63 /* ProfileViewController.swift */; };
+		3253B534271ADE390039AA63 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B533271ADE390039AA63 /* MenuViewController.swift */; };
 		3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */; };
 		3294D7CB2719B51E00D9CCE0 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */; };
 		3294D7CC2719B51E00D9CCE0 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */; };
@@ -72,7 +72,7 @@
 		324F8AB1271E9B38004423D2 /* YourProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProfileViewController.swift; sourceTree = "<group>"; };
 		324F8AB3271E9B45004423D2 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
 		3253B5312719F0F10039AA63 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
-		3253B533271ADE390039AA63 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3253B533271ADE390039AA63 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
 		3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
@@ -158,11 +158,10 @@
 		3253B535271ADF420039AA63 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				3253B533271ADE390039AA63 /* ProfileViewController.swift */,
+				3253B533271ADE390039AA63 /* MenuViewController.swift */,
 				324F8AB1271E9B38004423D2 /* YourProfileViewController.swift */,
 				324F8AB3271E9B45004423D2 /* LeaderBoardViewController.swift */,
 				324F8AAD271C0EDD004423D2 /* SettingsViewController.swift */,
-				32E11227271F661700E7CAA3 /* FacebookLoginButton.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -175,6 +174,7 @@
 				3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */,
 				3253B5312719F0F10039AA63 /* ScoreViewController.swift */,
 				3253B535271ADF420039AA63 /* SubViews */,
+				32E11229271F6D8500E7CAA3 /* CustomViews */,
 				32B3ABFA2718B02300D2317A /* Storyboards */,
 			);
 			path = Views;
@@ -186,6 +186,14 @@
 				32474C78270DCC3100B5DAB5 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		32E11229271F6D8500E7CAA3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				32E11227271F661700E7CAA3 /* FacebookLoginButton.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		89D2E7389D3B969B4BB19284 /* Frameworks */ = {
@@ -342,7 +350,7 @@
 				324F8AB4271E9B45004423D2 /* LeaderBoardViewController.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
 				3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */,
-				3253B534271ADE390039AA63 /* ProfileViewController.swift in Sources */,
+				3253B534271ADE390039AA63 /* MenuViewController.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,
 				324F8AB0271C12E3004423D2 /* Driver Questions.swift in Sources */,
 				324F8AB2271E9B38004423D2 /* YourProfileViewController.swift in Sources */,

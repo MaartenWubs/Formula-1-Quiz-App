@@ -20,10 +20,10 @@ class QuizViewController: UIViewController {
 
     //MARK: Outlets
     @IBOutlet var questionLabel: UILabel!
-    @IBOutlet var answerButton1: MDCButton!
-    @IBOutlet var answerButton2: MDCButton!
-    @IBOutlet var answerButton3: MDCButton!
-    @IBOutlet var answerButton4: MDCButton!
+    @IBOutlet var answerButton1: UIButton!
+    @IBOutlet var answerButton2: UIButton!
+    @IBOutlet var answerButton3: UIButton!
+    @IBOutlet var answerButton4: UIButton!
     @IBOutlet var image: UIImageView!
     @IBOutlet var quitButton: UIButton!
     @IBOutlet var questionAmount: UILabel!
@@ -88,6 +88,11 @@ class QuizViewController: UIViewController {
         quiz.shuffle()
         questions.append(contentsOf: quiz.prefix(upTo: 20))
 
+        answerButton1.titleLabel?.font = UIFont(name: "Formula1 Display Regular", size: 15)
+        answerButton2.titleLabel?.font = UIFont(name: "Formula1 Display Regular", size: 15)
+        answerButton3.titleLabel?.font = UIFont(name: "Formula1 Display Regular", size: 15)
+        answerButton4.titleLabel?.font = UIFont(name: "Formula1 Display Regular", size: 15)
+        
         answerButton1.tintColor = .red
         answerButton2.tintColor = .red
         answerButton3.tintColor = .red

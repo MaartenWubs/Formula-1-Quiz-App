@@ -7,7 +7,7 @@
 
 import Foundation
 
-//MARK: -Amount of questions: 5
+//MARK: -Amount of questions: 20
 class CurrentSeasonQuestions {
     public var questions = [
 //1.
@@ -114,8 +114,8 @@ class CurrentSeasonQuestions {
         Question(ask: "Redbull used a special livery on the car during the Turkish Grand Prix. Why did they have that livery?",
                  answers: [
                     Answer(answer: "It was Redbulls 500th Grnad Prix", correctness: false),
-                    Answer(answer: "", correctness: false),
-                    Answer(answer: "It was supposed to be the Japanise Grnad Prix that weekend and they did that as thank you to Honda.", correctness: true),
+                    Answer(answer: "Because they liked it", correctness: false),
+                    Answer(answer: "They did that as thank you to Honda.", correctness: true),
                     Answer(answer: "", correctness: false)
                  ],
                  image: nil,

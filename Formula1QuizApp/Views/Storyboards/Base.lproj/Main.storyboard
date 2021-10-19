@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FLS-AR-IPQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FLS-AR-IPQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xc-oK-xeU" userLabel="AnswerButton1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xc-oK-xeU" userLabel="AnswerButton1">
                                 <rect key="frame" x="20" y="475.5" width="374" height="51.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51.5" id="Pqj-6X-rmu"/>
@@ -42,7 +42,7 @@
                                     <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3To-o6-6S8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wWx-Wd-XdN" userLabel="AnswerButton2">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wWx-Wd-XdN" userLabel="AnswerButton2">
                                 <rect key="frame" x="20" y="565" width="374" height="51.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -56,7 +56,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-K6-24j">
                                 <rect key="frame" x="20" y="166" width="374" height="252"/>
                             </imageView>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-sK-phI" userLabel="AnswerButton3">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-sK-phI" userLabel="AnswerButton3">
                                 <rect key="frame" x="19.5" y="654.5" width="375" height="51"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Answer 3" titleAlignment="center">
@@ -162,7 +162,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Y2h-63-GID"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -194,6 +194,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Exit">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="15"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressedExit:" destination="8lG-bX-ZXr" eventType="touchUpInside" id="H9V-3t-f1L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dxf-bh-zIc"/>
@@ -213,6 +216,12 @@
                             <constraint firstItem="zzO-sC-9CT" firstAttribute="leading" secondItem="YX5-aA-ivc" secondAttribute="leading" id="ucE-GB-qkk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountOfQuestionsAnsweredLabel" destination="WqR-4o-kLw" id="LbY-OD-YhW"/>
+                        <outlet property="exitButton" destination="YX5-aA-ivc" id="P9b-vk-LOC"/>
+                        <outlet property="scoreTitleLabel" destination="VBG-4H-WlR" id="Tnq-J9-3Kx"/>
+                        <outlet property="totalScoreLabel" destination="zzO-sC-9CT" id="JQr-LA-505"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUI-0b-Jq6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,7 +310,7 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
-                                <buttonConfiguration key="configuration" style="filled" title="Current Season">
+                                <buttonConfiguration key="configuration" style="filled" title="2021 Season Quiz">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -309,11 +318,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QME-Y2-2oW">
-                                <rect key="frame" x="345" y="44" width="49" height="34"/>
+                                <rect key="frame" x="349" y="44" width="45" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" subtitle="">
-                                    <imageReference key="image" image="person.circle" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="text.justify" catalog="system" symbolScale="large"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ProfilePressed:" destination="YwF-bv-log" eventType="touchUpInside" id="hdP-CI-N7P"/>
@@ -344,21 +353,36 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
-                                <buttonConfiguration key="configuration" style="filled" title="History">
+                                <buttonConfiguration key="configuration" style="filled" title="History Quiz">
                                     <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="IDY-R2-A4S"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd7-Uh-ZdP">
+                                <rect key="frame" x="20" y="627" width="374" height="52"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Drivers Quiz">
+                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="mAV-eU-XCb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NDS-ac-gS3"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="top" secondItem="qJf-E8-4nz" secondAttribute="bottom" constant="45" id="0fB-id-8Gz"/>
+                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="leading" secondItem="qJf-E8-4nz" secondAttribute="leading" id="4U5-Un-liX"/>
+                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="trailing" secondItem="qJf-E8-4nz" secondAttribute="trailing" id="7Fn-NO-TJT"/>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NDS-ac-gS3" secondAttribute="leading" id="Eko-1G-GLK"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="trailing" secondItem="Iq9-pM-JED" secondAttribute="trailingMargin" id="HA5-TR-ikW"/>
                             <constraint firstItem="qJf-E8-4nz" firstAttribute="leading" secondItem="gbB-56-lhm" secondAttribute="leading" id="Kj4-Za-iJV"/>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="top" secondItem="Iq9-pM-JED" secondAttribute="topMargin" id="Lml-lt-fof"/>
+                            <constraint firstItem="NDS-ac-gS3" firstAttribute="bottom" secondItem="Kd7-Uh-ZdP" secondAttribute="bottom" constant="183" id="Oa3-Bu-GCF"/>
                             <constraint firstItem="qJf-E8-4nz" firstAttribute="top" secondItem="gbB-56-lhm" secondAttribute="bottom" constant="45" id="TNA-V3-Aie"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="top" secondItem="NDS-ac-gS3" secondAttribute="top" constant="39" id="UQy-Hq-1jA"/>
                             <constraint firstItem="qJf-E8-4nz" firstAttribute="trailing" secondItem="gbB-56-lhm" secondAttribute="trailing" id="VDl-Q7-zlt"/>
@@ -372,27 +396,56 @@
                     <navigationItem key="navigationItem" id="gmX-O3-sCA"/>
                     <connections>
                         <outlet property="currentSeasonButton" destination="gbB-56-lhm" id="o8P-E0-B0o"/>
+                        <outlet property="driversQuizButton" destination="Kd7-Uh-ZdP" id="BcL-Ux-eUY"/>
                         <outlet property="historyButton" destination="qJf-E8-4nz" id="fDn-7N-gkv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmj-Iu-1DG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="141"/>
+            <point key="canvasLocation" x="-88.405797101449281" y="140.625"/>
         </scene>
         <!--Profile View Controller-->
-        <scene sceneID="Vzj-eV-t0I">
+        <scene sceneID="vJC-Ol-mtc">
             <objects>
-                <viewController storyboardIdentifier="ProfilePage" id="T2c-i0-4So" customClass="ProfileViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jjn-ss-geR">
+                <tableViewController storyboardIdentifier="ProfilePage" id="os7-Pa-U6n" customClass="ProfileViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fiJ-il-XXs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ctY-RB-63e"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="pageCell" id="f1T-fp-gEX">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f1T-fp-gEX" id="q0N-Hr-lWr">
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="os7-Pa-U6n" id="y9L-Lh-mUy"/>
+                            <outlet property="delegate" destination="os7-Pa-U6n" id="YtC-sj-Nxt"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mav-qg-ana" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="141"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="AO4-lz-rcy">
+            <objects>
+                <viewController storyboardIdentifier="SettingsPage" id="MyX-fN-KOL" customClass="SettingsViewController" customModule="Formula1QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIe-I8-h9M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MW1-Hs-Uec"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X93-1T-xB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R84-Q1-qFk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882.60869565217399" y="140.625"/>
+            <point key="canvasLocation" x="1528" y="141"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bXr-NR-6SC">
@@ -415,7 +468,10 @@
     </scenes>
     <resources>
         <image name="F1-logo" width="3840" height="2160"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="text.justify" catalog="system" width="128" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

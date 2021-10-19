@@ -19,7 +19,6 @@ class StartViewController: UIViewController {
     }
     
     @IBAction func PressedStart(_ sender: UIButton) {
-        print("pressed")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main",
                                                     bundle: nil)
         

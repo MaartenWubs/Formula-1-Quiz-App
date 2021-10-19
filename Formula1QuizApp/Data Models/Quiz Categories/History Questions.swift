@@ -7,7 +7,7 @@
 
 import Foundation
 
-//MARK: -Amount of questions: 1
+//MARK: -Amount of questions 20
 class HistoryQuestions {
     public var questions = [
 //1.

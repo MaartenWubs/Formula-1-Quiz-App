@@ -12,10 +12,9 @@ class CategoryViewController: UIViewController {
     //Outlets
     @IBOutlet var currentSeasonButton: UIButton!
     @IBOutlet var historyButton: UIButton!
+    @IBOutlet var driversQuizButton: UIButton!
     
-    //Quiz properties
-    let currentSeason = CurrentSeasonQuestions()
-    let history = HistoryQuestions()
+    let quiz = QuizModel()
     
     //Action
     @IBAction func QuizButtonPressed(_ sender: UIButton) {
@@ -29,9 +28,11 @@ class CategoryViewController: UIViewController {
         
         //Check which button is pressed and load the correct array of questions
         if sender.tag == 0 {
-            quizView.quiz = currentSeason.questions
+            quizView.quiz = quiz.currentSeasonQuiz.questions
         } else if sender.tag == 1 {
-            quizView.quiz = history.questions
+            quizView.quiz = quiz.historyQuiz.questions
+        } else if sender.tag == 2 {
+            quizView.quiz = quiz.driversQuiz.questions
         }
         
         //present the new view
@@ -52,6 +53,7 @@ class CategoryViewController: UIViewController {
         super.viewDidLoad()
         currentSeasonButton.tintColor = .red
         historyButton.tintColor = .red
+        driversQuizButton.tintColor = .red
     }
     
     

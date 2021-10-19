@@ -40,8 +40,6 @@ class QuizViewController: UIViewController {
         //Add one to the answered quiestions
         answeredQuestions += 1
         
-        print("Pressed")
-        
         //Check if answeredQuestions is less then 20 to continue.
         if answeredQuestions < 20 {
             askQuestion()

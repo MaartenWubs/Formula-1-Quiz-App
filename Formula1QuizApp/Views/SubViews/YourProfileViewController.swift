@@ -11,12 +11,31 @@ import FacebookCore
 import FBSDKLoginKit
 import GoogleSignIn
 
-class YourProfileViewController: UIViewController {
+class YourProfileViewController: UIViewController,
+                                 ASAuthorizationControllerPresentationContextProviding {
+    
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
+    }
 
     public let publicTitle = "Your Profile"
     
     //MARK: General properties
     var loggedIn = false
+    var userIdentifier: String = ""
+    
+    var userIdentifierLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Placeholder"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont(name: "Formula1 Display Regular", size: 20)
+        label.textColor = .white
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.sizeToFit()
+        return label
+    }()
+    
     let signInLabel: UILabel = {
         let label = UILabel()
         label.text = "Please select a method to login"
@@ -30,6 +49,7 @@ class YourProfileViewController: UIViewController {
     let signInWithAppleButton: ASAuthorizationAppleIDButton = {
         let button = ASAuthorizationAppleIDButton(type: .signIn, style: .white)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(startAppleIDAuthentication), for: .touchUpInside)
         return button
     }()
     
@@ -52,14 +72,17 @@ class YourProfileViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .black
-        if loggedIn {
+        if loggedIn == true {
             // If logged into account, show account details
             // Else shwo login options
-        } else {
-            addTextLabel()
-            createSignInWithFacebookButton()
-            createSignInWithGoogleButton()
-            createSignInWithAppleButton()
+            userIdentifierLabel.text = userIdentifier
+            view.addSubview(userIdentifierLabel)
+            NSLayoutConstraint.activate([
+                userIdentifierLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+                userIdentifierLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            ])
+        } else if loggedIn == false {
+            createSignInView()
         }
     }
     
@@ -87,7 +110,7 @@ class YourProfileViewController: UIViewController {
         NSLayoutConstraint.activate([
             signInWithFacebookButton.centerXAnchor.constraint(equalTo: view.layoutMarginsGuide.centerXAnchor),
             signInWithFacebookButton.centerYAnchor.constraint(equalTo: view.layoutMarginsGuide.centerYAnchor),
-            signInWithFacebookButton.widthAnchor.constraint(equalTo: view.widthAnchor),
+            signInWithFacebookButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -20),
             signInWithFacebookButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
@@ -114,5 +137,11 @@ class YourProfileViewController: UIViewController {
             signInLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
-
+    
+    func createSignInView() {
+        addTextLabel()
+        createSignInWithFacebookButton()
+        createSignInWithGoogleButton()
+        createSignInWithAppleButton()
+    }
 }

@@ -28,76 +28,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-pv-9WE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xc-oK-xeU" userLabel="AnswerButton1">
-                                <rect key="frame" x="20" y="475.5" width="374" height="51.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51.5" id="Pqj-6X-rmu"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 1" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3To-o6-6S8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="wWx-Wd-XdN" userLabel="AnswerButton2">
-                                <rect key="frame" x="20" y="565" width="374" height="51.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="start-page-picture" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-pv-9WE">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 2" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwl-m7-UMH"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-K6-24j">
-                                <rect key="frame" x="20" y="166" width="374" height="252"/>
                             </imageView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzs-sK-phI" userLabel="AnswerButton3">
-                                <rect key="frame" x="19.5" y="654.5" width="375" height="51"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 3" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ges-Av-iCf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-l4-d3W" userLabel="AnswerButton4">
-                                <rect key="frame" x="20" y="743.5" width="374" height="52"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Answer 4" titleAlignment="center">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="buttonePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UXM-K7-Fx4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In which corner did Lewis Hamilton and Max Verstappen colide during the British Grand Prix?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpc-La-e8g" userLabel="QuestionLabel">
-                                <rect key="frame" x="20" y="95" width="374" height="54"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="In which corner did Lewis Hamilton and Max Verstappen colide during the British Grand Prix?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpc-La-e8g" userLabel="QuestionLabel">
+                                <rect key="frame" x="20" y="95" width="374" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="4VR-dE-owb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnh-K2-aVb">
-                                <rect key="frame" x="305.5" y="51" width="91.5" height="29"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Quit">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="PressedQuit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Lg-Ee-AEo"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-K6-24j">
+                                <rect key="frame" x="20" y="169" width="374" height="240"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1 of 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yP5-dp-EEv">
-                                <rect key="frame" x="129.5" y="62.5" width="155.5" height="10"/>
+                                <rect key="frame" x="130" y="64" width="155.5" height="10"/>
                                 <fontDescription key="fontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -106,51 +54,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BH6-l4-d3W" firstAttribute="top" secondItem="Qzs-sK-phI" secondAttribute="bottom" constant="38" id="0Ce-08-Fin"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BcZ-K6-24j" secondAttribute="leading" id="0xb-so-0lW"/>
-                            <constraint firstItem="wpc-La-e8g" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4jk-YY-BOt"/>
-                            <constraint firstItem="BcZ-K6-24j" firstAttribute="top" secondItem="wpc-La-e8g" secondAttribute="bottom" constant="17" id="5YT-5L-f09"/>
-                            <constraint firstItem="cnh-K2-aVb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="62d-LP-YcL"/>
-                            <constraint firstItem="BcZ-K6-24j" firstAttribute="centerX" secondItem="wpc-La-e8g" secondAttribute="centerX" id="6j5-tE-dHO"/>
-                            <constraint firstItem="cnh-K2-aVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="EfZ-po-Dgd"/>
-                            <constraint firstItem="BH6-l4-d3W" firstAttribute="centerX" secondItem="Qzs-sK-phI" secondAttribute="centerX" id="FoV-Hz-px9"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wWx-Wd-XdN" secondAttribute="trailing" id="GON-9J-u4b"/>
-                            <constraint firstItem="wWx-Wd-XdN" firstAttribute="centerX" secondItem="1xc-oK-xeU" secondAttribute="centerX" id="JG8-hg-pv5"/>
-                            <constraint firstItem="u0N-pv-9WE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ld8-8v-baq"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BcZ-K6-24j" secondAttribute="trailing" id="Nk4-iy-Wbp"/>
-                            <constraint firstItem="BH6-l4-d3W" firstAttribute="height" secondItem="Qzs-sK-phI" secondAttribute="height" multiplier="1.01961" id="OQW-bY-e7M"/>
-                            <constraint firstItem="u0N-pv-9WE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PJK-eA-bZp"/>
-                            <constraint firstItem="Qzs-sK-phI" firstAttribute="top" secondItem="wWx-Wd-XdN" secondAttribute="bottom" constant="38" id="PgQ-rG-wb9"/>
-                            <constraint firstItem="Qzs-sK-phI" firstAttribute="centerX" secondItem="wWx-Wd-XdN" secondAttribute="centerX" id="Qpf-6z-X9N"/>
-                            <constraint firstItem="wWx-Wd-XdN" firstAttribute="top" secondItem="1xc-oK-xeU" secondAttribute="bottom" constant="38" id="U3V-ZU-WlR"/>
-                            <constraint firstItem="yP5-dp-EEv" firstAttribute="firstBaseline" secondItem="cnh-K2-aVb" secondAttribute="baseline" id="bFB-Kr-khh"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="centerX" secondItem="BcZ-K6-24j" secondAttribute="centerX" id="bFl-gD-TCw"/>
-                            <constraint firstItem="wpc-La-e8g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="cN6-OQ-56O"/>
-                            <constraint firstItem="u0N-pv-9WE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="gbR-CL-sBI"/>
-                            <constraint firstItem="u0N-pv-9WE" firstAttribute="centerX" secondItem="BH6-l4-d3W" secondAttribute="centerX" id="hi2-Xm-ZU9"/>
-                            <constraint firstItem="wWx-Wd-XdN" firstAttribute="height" secondItem="1xc-oK-xeU" secondAttribute="height" id="htw-oC-DpI"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="top" secondItem="BcZ-K6-24j" secondAttribute="bottom" constant="57.5" id="i3k-lR-Xkv"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="top" secondItem="BcZ-K6-24j" secondAttribute="bottom" constant="57.5" id="iuq-Sc-N7F"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="leading" secondItem="wWx-Wd-XdN" secondAttribute="leading" id="l5f-wi-6Aq"/>
-                            <constraint firstItem="Qzs-sK-phI" firstAttribute="height" secondItem="wWx-Wd-XdN" secondAttribute="height" multiplier="0.601942" constant="20.000000000000004" id="lFR-z5-Mab"/>
-                            <constraint firstItem="yP5-dp-EEv" firstAttribute="centerX" secondItem="wpc-La-e8g" secondAttribute="centerX" id="pNC-JB-5JN"/>
-                            <constraint firstItem="BH6-l4-d3W" firstAttribute="width" secondItem="Qzs-sK-phI" secondAttribute="width" multiplier="0.997333" id="qML-vT-PcY"/>
-                            <constraint firstItem="1xc-oK-xeU" firstAttribute="leading" secondItem="wpc-La-e8g" secondAttribute="leading" id="rLn-Tb-VE2"/>
-                            <constraint firstItem="Qzs-sK-phI" firstAttribute="width" secondItem="wWx-Wd-XdN" secondAttribute="width" multiplier="0.179144" constant="308" id="wAn-ha-RdY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cnh-K2-aVb" secondAttribute="trailing" constant="17" id="xuz-NI-VuW"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="trailing" secondItem="BcZ-K6-24j" secondAttribute="trailing" id="BwU-DN-iti"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EfK-Mw-CGi"/>
+                            <constraint firstItem="BcZ-K6-24j" firstAttribute="top" secondItem="wpc-La-e8g" secondAttribute="bottom" constant="8" id="a6n-me-CQL"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="top" secondItem="yP5-dp-EEv" secondAttribute="bottom" constant="21" id="c9F-8p-Y3E"/>
+                            <constraint firstItem="yP5-dp-EEv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fOh-Ji-ghu"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="leading" secondItem="BcZ-K6-24j" secondAttribute="leading" id="n37-kM-oNU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yP5-dp-EEv" secondAttribute="trailing" constant="128.5" id="ofY-Mb-g37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BcZ-K6-24j" secondAttribute="bottom" constant="453" id="pHn-ip-pow"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="95" id="pOe-Y4-6jO"/>
+                            <constraint firstItem="wpc-La-e8g" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="yrN-0R-T1T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tbK-bU-3se"/>
                     <connections>
-                        <outlet property="answerButton1" destination="1xc-oK-xeU" id="3q4-bN-Ned"/>
-                        <outlet property="answerButton2" destination="wWx-Wd-XdN" id="sgR-fh-aL2"/>
-                        <outlet property="answerButton3" destination="Qzs-sK-phI" id="egs-YX-Q4e"/>
-                        <outlet property="answerButton4" destination="BH6-l4-d3W" id="fpV-xt-hoM"/>
                         <outlet property="backgroundImage" destination="u0N-pv-9WE" id="19y-ga-SRo"/>
                         <outlet property="image" destination="BcZ-K6-24j" id="5ky-fi-pVf"/>
                         <outlet property="questionAmount" destination="yP5-dp-EEv" id="1xk-kB-JbH"/>
                         <outlet property="questionLabel" destination="wpc-La-e8g" id="VJp-5W-yPC"/>
-                        <outlet property="quitButton" destination="cnh-K2-aVb" id="Sik-O3-DUq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -296,29 +217,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbB-56-lhm">
-                                <rect key="frame" x="20" y="433" width="374" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Q5S-pN-mCU"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Current Season">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Formula1-Display-Regular"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <buttonConfiguration key="configuration" style="filled" title="2021 Season Quiz">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="67y-fY-lJJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QME-Y2-2oW">
                                 <rect key="frame" x="349" y="44" width="45" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
@@ -339,68 +237,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-E8-4nz">
-                                <rect key="frame" x="20" y="530" width="374" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="ihz-mP-gE3"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Current Season">
-                                            <attributes>
-                                                <font key="NSFont" size="20" name="Formula1-Display-Regular"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <buttonConfiguration key="configuration" style="filled" title="History Quiz">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="IDY-R2-A4S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd7-Uh-ZdP">
-                                <rect key="frame" x="20" y="627" width="374" height="52"/>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Drivers Quiz">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Regular" family="Formula1" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="QuizButtonPressed:" destination="YwF-bv-log" eventType="touchUpInside" id="mAV-eU-XCb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NDS-ac-gS3"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="top" secondItem="qJf-E8-4nz" secondAttribute="bottom" constant="45" id="0fB-id-8Gz"/>
-                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="leading" secondItem="qJf-E8-4nz" secondAttribute="leading" id="4U5-Un-liX"/>
-                            <constraint firstItem="Kd7-Uh-ZdP" firstAttribute="trailing" secondItem="qJf-E8-4nz" secondAttribute="trailing" id="7Fn-NO-TJT"/>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NDS-ac-gS3" secondAttribute="leading" id="Eko-1G-GLK"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="trailing" secondItem="Iq9-pM-JED" secondAttribute="trailingMargin" id="HA5-TR-ikW"/>
-                            <constraint firstItem="qJf-E8-4nz" firstAttribute="leading" secondItem="gbB-56-lhm" secondAttribute="leading" id="Kj4-Za-iJV"/>
                             <constraint firstItem="QME-Y2-2oW" firstAttribute="top" secondItem="Iq9-pM-JED" secondAttribute="topMargin" id="Lml-lt-fof"/>
-                            <constraint firstItem="NDS-ac-gS3" firstAttribute="bottom" secondItem="Kd7-Uh-ZdP" secondAttribute="bottom" constant="183" id="Oa3-Bu-GCF"/>
-                            <constraint firstItem="qJf-E8-4nz" firstAttribute="top" secondItem="gbB-56-lhm" secondAttribute="bottom" constant="45" id="TNA-V3-Aie"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="top" secondItem="NDS-ac-gS3" secondAttribute="top" constant="39" id="UQy-Hq-1jA"/>
-                            <constraint firstItem="qJf-E8-4nz" firstAttribute="trailing" secondItem="gbB-56-lhm" secondAttribute="trailing" id="VDl-Q7-zlt"/>
                             <constraint firstItem="JMB-I9-5J4" firstAttribute="leading" secondItem="Iq9-pM-JED" secondAttribute="leadingMargin" id="aE5-KV-Mqw"/>
-                            <constraint firstItem="NDS-ac-gS3" firstAttribute="bottom" secondItem="gbB-56-lhm" secondAttribute="bottom" constant="377" id="ahK-TL-9qw"/>
                             <constraint firstItem="NDS-ac-gS3" firstAttribute="trailing" secondItem="QME-Y2-2oW" secondAttribute="trailing" constant="20" id="gxI-a6-lto"/>
-                            <constraint firstItem="JMB-I9-5J4" firstAttribute="trailing" secondItem="gbB-56-lhm" secondAttribute="trailing" id="jgS-Cc-XzD"/>
-                            <constraint firstItem="JMB-I9-5J4" firstAttribute="leading" secondItem="gbB-56-lhm" secondAttribute="leading" id="n8m-JA-4rC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gmX-O3-sCA"/>
-                    <connections>
-                        <outlet property="currentSeasonButton" destination="gbB-56-lhm" id="o8P-E0-B0o"/>
-                        <outlet property="driversQuizButton" destination="Kd7-Uh-ZdP" id="BcL-Ux-eUY"/>
-                        <outlet property="historyButton" destination="qJf-E8-4nz" id="fDn-7N-gkv"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rmj-Iu-1DG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

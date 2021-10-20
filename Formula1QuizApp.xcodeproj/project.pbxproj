@@ -30,6 +30,9 @@
 		3253B5322719F0F10039AA63 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B5312719F0F10039AA63 /* ScoreViewController.swift */; };
 		3253B534271ADE390039AA63 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3253B533271ADE390039AA63 /* MenuViewController.swift */; };
 		326600CD27202958001DC45B /* SignInWithAppleMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326600CC27202958001DC45B /* SignInWithAppleMethods.swift */; };
+		326600CF27204DDE001DC45B /* CategoryButtonsHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326600CE27204DDE001DC45B /* CategoryButtonsHandlers.swift */; };
+		326600D127205FE1001DC45B /* QuizHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326600D027205FE1001DC45B /* QuizHandlers.swift */; };
+		326600D32720725E001DC45B /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326600D22720725D001DC45B /* HostingController.swift */; };
 		3294D7C52719B32700D9CCE0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */; };
 		3294D7CB2719B51E00D9CCE0 /* Formula1-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */; };
 		3294D7CC2719B51E00D9CCE0 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */; };
@@ -61,6 +64,9 @@
 		3253B533271ADE390039AA63 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		326600CA272005B6001DC45B /* Formula1QuizApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Formula1QuizApp.entitlements; sourceTree = "<group>"; };
 		326600CC27202958001DC45B /* SignInWithAppleMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleMethods.swift; sourceTree = "<group>"; };
+		326600CE27204DDE001DC45B /* CategoryButtonsHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButtonsHandlers.swift; sourceTree = "<group>"; };
+		326600D027205FE1001DC45B /* QuizHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHandlers.swift; sourceTree = "<group>"; };
+		326600D22720725D001DC45B /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		3294D7C42719B32700D9CCE0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3294D7C82719B51E00D9CCE0 /* Formula1-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Bold.otf"; sourceTree = "<group>"; };
 		3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 				326600CA272005B6001DC45B /* Formula1QuizApp.entitlements */,
 				32474C72270DCC3000B5DAB5 /* AppDelegate.swift */,
 				32474C74270DCC3000B5DAB5 /* SceneDelegate.swift */,
+				326600D22720725D001DC45B /* HostingController.swift */,
 				32B3ABF72718A91200D2317A /* Views */,
 				32474C86270DCC9700B5DAB5 /* Data Models */,
 				326600CB27201E89001DC45B /* Extensions */,
@@ -160,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				326600CC27202958001DC45B /* SignInWithAppleMethods.swift */,
+				326600CE27204DDE001DC45B /* CategoryButtonsHandlers.swift */,
+				326600D027205FE1001DC45B /* QuizHandlers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,14 +348,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326600CF27204DDE001DC45B /* CategoryButtonsHandlers.swift in Sources */,
 				32474C77270DCC3000B5DAB5 /* ViewController.swift in Sources */,
 				326600CD27202958001DC45B /* SignInWithAppleMethods.swift in Sources */,
+				326600D127205FE1001DC45B /* QuizHandlers.swift in Sources */,
 				32474C73270DCC3000B5DAB5 /* AppDelegate.swift in Sources */,
 				32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */,
 				32E11228271F661700E7CAA3 /* FacebookLoginButton.swift in Sources */,
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
 				324F8AB4271E9B45004423D2 /* LeaderBoardViewController.swift in Sources */,
 				32474C8D270DD48400B5DAB5 /* Current Season Questions.swift in Sources */,
+				326600D32720725E001DC45B /* HostingController.swift in Sources */,
 				3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */,
 				3253B534271ADE390039AA63 /* MenuViewController.swift in Sources */,
 				32474C8A270DD11600B5DAB5 /* QuizModel.swift in Sources */,

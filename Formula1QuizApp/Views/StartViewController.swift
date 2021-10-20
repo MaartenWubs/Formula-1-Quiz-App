@@ -35,6 +35,7 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .black
         view.addSubview(startButton)
         
@@ -46,6 +47,10 @@ class StartViewController: UIViewController {
             startButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             startButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -20)
         ])
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
     }
     
     @objc

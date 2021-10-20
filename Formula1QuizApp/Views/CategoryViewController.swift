@@ -6,56 +6,39 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class CategoryViewController: UIViewController {
-
-    //Outlets
-    @IBOutlet var currentSeasonButton: UIButton!
-    @IBOutlet var historyButton: UIButton!
-    @IBOutlet var driversQuizButton: UIButton!
     
+    //MARK: Button properties
+    var currentSeasonButton: MDCButton = {
+        let button = MDCButton()
+        button.tag = 0
+        button.setTitle("Current Season", for: .normal)
+        return button
+    }()
+    
+    var historyQuizButton: MDCButton = {
+        let button = MDCButton()
+        button.tag = 1
+        button.setTitle("History", for: .normal)
+        return button
+    }()
+    
+    var driverQuizButton: MDCButton = {
+        let button = MDCButton()
+        button.tag = 2
+        button.setTitle("Drivers Quiz", for: .normal)
+        return button
+    }()
+
     let quiz = QuizModel()
     
-    //Action
-    @IBAction func QuizButtonPressed(_ sender: UIButton) {
-        print("pressed") //DEBUG purposes
-        
-        //Search the main storyboard file
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main",
-                                                    bundle: nil)
-        //Search the view controller with "QuizView" as ID
-        let quizView = storyboard.instantiateViewController(withIdentifier: "QuizView") as! QuizViewController
-        
-        //Check which button is pressed and load the correct array of questions
-        if sender.tag == 0 {
-            quizView.quiz = quiz.currentSeasonQuiz.questions
-        } else if sender.tag == 1 {
-            quizView.quiz = quiz.historyQuiz.questions
-        } else if sender.tag == 2 {
-            quizView.quiz = quiz.driversQuiz.questions
-        }
-        
-        //present the new view
-        navigationController?.pushViewController(quizView,
-                                                 animated: true)
-    }
-    
-    @IBAction func ProfilePressed(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main",
-                                      bundle: nil)
-        let profileView = storyboard.instantiateViewController(withIdentifier: "MenuPage") as! MenuViewController
-        navigationController?.pushViewController(profileView,
-                                                 animated: true)
-    }
-    
-    
+    //MARK: View Code
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentSeasonButton.tintColor = .red
-        historyButton.tintColor = .red
-        driversQuizButton.tintColor = .red
+        createButtons()
     }
-    
     
     //This is to hide the back button in the view
     override func viewWillAppear(_ animated: Bool) {
@@ -69,4 +52,14 @@ class CategoryViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false,
                                                           animated: true)
     }
+    
+    @IBAction func ProfilePressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main",
+                                      bundle: nil)
+        let profileView = storyboard.instantiateViewController(withIdentifier: "MenuPage") as! MenuViewController
+        navigationController?.pushViewController(profileView,
+                                                 animated: true)
+    }
+    
+
 }

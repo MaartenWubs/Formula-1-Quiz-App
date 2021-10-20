@@ -10,14 +10,34 @@ import MaterialComponents
 
 class StartViewController: UIViewController {
 
-    @IBOutlet var startButton: UIButton!
     @IBOutlet var backgroundImageView: UIImageView!
+    
+    let startButton: MDCButton = {
+        let button = MDCButton()
+        button.setBackgroundColor(.red)
+        button.rippleColor = .white
+        button.enableRippleBehavior = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Start Game",
+                        for: .normal)
+        
+        button.setTitleFont(UIFont(name: "Formula1 Display Regular",
+                                   size: 20),
+                            for: .normal)
+        
+        button.layer.cornerRadius = 15
+        
+        button.addTarget(self,
+                         action: #selector(pressedStart),
+                         for: .touchUpInside)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-        startButton.tintColor = .red
-        startButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(startButton)
+        
         backgroundImageView.layer.opacity = 0.40
         
         NSLayoutConstraint.activate([
@@ -28,7 +48,8 @@ class StartViewController: UIViewController {
         ])
     }
     
-    @IBAction func PressedStart(_ sender: UIButton) {
+    @objc
+    func pressedStart() {
         let storyboard: UIStoryboard = UIStoryboard(name: "Main",
                                                     bundle: nil)
         

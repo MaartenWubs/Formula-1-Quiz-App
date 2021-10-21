@@ -62,7 +62,7 @@ extension CategoryViewController {
         } else if sender.tag == 1 {
             quizView.quiz = quiz.historyQuiz.questions
         } else if sender.tag == 2 {
-            quizView.quiz = quiz.driversQuiz.questions
+            //quizView.quiz = quiz.driversQuiz.questions
         }
         
         //present the new view

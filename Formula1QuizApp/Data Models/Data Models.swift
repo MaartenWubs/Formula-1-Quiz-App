@@ -18,4 +18,5 @@ struct Question {
 struct Answer {
     let answer: String
     let correctness: Bool
+    let textSize: CGFloat
 }

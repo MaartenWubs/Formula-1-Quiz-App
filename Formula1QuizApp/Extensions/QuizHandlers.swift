@@ -15,20 +15,25 @@ extension QuizViewController {
         let buttonsArray = [answerButton1, answerButton2, answerButton3, answerButton4]
         for i in 0..<buttonsArray.count {
             buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer, for: .normal)
+            buttonsArray[i].setTitleFont(UIFont(name: "Formula1 Display Regular",
+                                       size: questions[answeredQuestions].answers[i].textSize),
+                                for: .normal)
             buttonsArray[i].tag = i
+            
         }
         for button in buttonsArray {
             button.setBackgroundColor(.red)
             button.rippleColor = .white
             button.enableRippleBehavior = true
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.setTitleFont(UIFont(name: "Formula1 Display Regular",
-                                       size: 15),
-                                for: .normal)
+            
+            button.titleLabel?.lineBreakStrategy = .standard
             button.layer.cornerRadius = 10
             button.addTarget(self, action: #selector(buttonePressed), for: .touchUpInside)
             view.addSubview(button)
         }
+        
+        let buttonHeight: CGFloat = 60
         
         NSLayoutConstraint.activate([
             self.answerButton1.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -47,7 +52,11 @@ extension QuizViewController {
             self.answerButton4.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             self.answerButton4.topAnchor.constraint(equalTo: self.answerButton3.bottomAnchor,
                                                    constant: 20),
-            self.answerButton4.widthAnchor.constraint(equalTo: self.answerButton1.widthAnchor)
+            self.answerButton4.widthAnchor.constraint(equalTo: self.answerButton1.widthAnchor),
+            self.answerButton1.heightAnchor.constraint(equalToConstant: buttonHeight),
+            self.answerButton2.heightAnchor.constraint(equalToConstant: buttonHeight),
+            self.answerButton3.heightAnchor.constraint(equalToConstant: buttonHeight),
+            self.answerButton4.heightAnchor.constraint(equalToConstant: buttonHeight)
         ])
     }
     
@@ -74,15 +83,19 @@ extension QuizViewController {
     @objc
     func askQuestion() {
         
+        let buttonsArray = [answerButton1, answerButton2, answerButton3, answerButton4]
+        
         questionAmount.text = "Question \(answeredQuestions + 1) of \(questions.count)"
         
         questionLabel.text = questions[answeredQuestions].ask
         questionLabel.textColor = .white
         
-        answerButton1.setTitle(questions[answeredQuestions].answers[0].answer, for: .normal)
-        answerButton2.setTitle(questions[answeredQuestions].answers[1].answer, for: .normal)
-        answerButton3.setTitle(questions[answeredQuestions].answers[2].answer, for: .normal)
-        answerButton4.setTitle(questions[answeredQuestions].answers[3].answer, for: .normal)
+        for i in 0..<buttonsArray.count {
+            buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer, for: .normal)
+            buttonsArray[i].setTitleFont(UIFont(name: "Formula1 Display Regular",
+                                       size: questions[answeredQuestions].answers[i].textSize),
+                                for: .normal)
+        }
         
         image.image = UIImage(named: questions[answeredQuestions].image ?? "")
     }

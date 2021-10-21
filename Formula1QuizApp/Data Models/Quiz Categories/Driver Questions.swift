@@ -8,7 +8,8 @@
 import Foundation
 
 class DriversQuestions {
-    public let questions = [
+    //public let questions = [
+        /*
         Question(ask: "",
                  answers: [
                     Answer(answer: "", correctness: false),
@@ -208,5 +209,6 @@ class DriversQuestions {
                  ],
                  image: nil,
                  category: "Drivers"),
-    ]
+        */
+    //]
 }

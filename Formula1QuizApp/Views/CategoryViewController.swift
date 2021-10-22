@@ -14,21 +14,24 @@ class CategoryViewController: UIViewController {
     var currentSeasonButton: MDCButton = {
         let button = MDCButton()
         button.tag = 0
-        button.setTitle("Current Season", for: .normal)
+        button.setTitle("Current Season",
+                        for: .normal)
         return button
     }()
     
     var historyQuizButton: MDCButton = {
         let button = MDCButton()
         button.tag = 1
-        button.setTitle("History", for: .normal)
+        button.setTitle("History",
+                        for: .normal)
         return button
     }()
     
     var driverQuizButton: MDCButton = {
         let button = MDCButton()
         button.tag = 2
-        button.setTitle("Drivers Quiz", for: .normal)
+        button.setTitle("Drivers Quiz",
+                        for: .normal)
         return button
     }()
 

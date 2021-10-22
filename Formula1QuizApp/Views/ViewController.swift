@@ -44,12 +44,16 @@ class QuizViewController: UIViewController {
     var quitButton: MDCButton = {
         let button = MDCButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Quit", for: .normal)
+        button.setTitle("Quit",
+                        for: .normal)
         button.setTitleFont(UIFont(name: "Formula1 Display Regular",
                                    size: 15),
                             for: .normal)
-        button.setBackgroundColor(.black, for: .normal)
-        button.addTarget(self, action: #selector(pressedQuit), for: .touchUpInside)
+        button.setBackgroundColor(.black,
+                                  for: .normal)
+        button.addTarget(self,
+                         action: #selector(pressedQuit),
+                         for: .touchUpInside)
         
         return button
     }()

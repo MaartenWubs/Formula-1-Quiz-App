@@ -19,7 +19,8 @@ class SettingsViewController: UIViewController {
             label.translatesAutoresizingMaskIntoConstraints = false
             label.text = "Settings"
             label.textColor = .white
-            label.font = UIFont(name: "Formula1 Display Regular", size: 20)
+            label.font = UIFont(name: "Formula1 Display Regular",
+                                size: 20)
             return label
         }()
         

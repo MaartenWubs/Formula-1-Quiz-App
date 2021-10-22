@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MaterialComponents
 
 class ScoreViewController: UIViewController {
     
@@ -16,15 +17,26 @@ class ScoreViewController: UIViewController {
     @IBOutlet var scoreTitleLabel: UILabel!
     @IBOutlet var amountOfQuestionsAnsweredLabel: UILabel!
     @IBOutlet var totalScoreLabel: UILabel!
-    @IBOutlet var exitButton: UIButton!
     @IBOutlet var bacgroundImage: UIImageView!
+    
+    let exitButton: MDCButton = {
+        let button = MDCButton()
+        button.setBackgroundColor(.red)
+        button.setTitle("Exit",
+                        for: .normal)
+        button.setTitleFont(UIFont(name: "Formula1 Display Regular",
+                                   size: 20),
+                            for: .normal)
+        button.addTarget(self,
+                         action: #selector(pressedExit),
+                         for: .touchUpInside)
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bacgroundImage.layer.opacity = 0.3
         bacgroundImage.translatesAutoresizingMaskIntoConstraints = false
-        
-        exitButton.tintColor = .red
         
         if endScore > 70 {
             scoreTitleLabel.text = "Congratulations"
@@ -43,10 +55,13 @@ class ScoreViewController: UIViewController {
         ])
     }
     
-    @IBAction func pressedExit(_ sender: UIButton) {
-        let view = UIStoryboard(name: "Main", bundle: nil)
+    @objc
+    func pressedExit(_ sender: MDCButton) {
+        let view = UIStoryboard(name: "Main",
+                                bundle: nil)
         let returnView = view.instantiateViewController(withIdentifier: "CatergoryView")
-        navigationController?.pushViewController(returnView, animated: true)
+        navigationController?.pushViewController(returnView,
+                                                 animated: true)
     }
     
     //removing the back button

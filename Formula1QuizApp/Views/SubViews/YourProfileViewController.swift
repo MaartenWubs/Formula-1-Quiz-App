@@ -28,7 +28,8 @@ class YourProfileViewController: UIViewController,
         let label = UILabel()
         label.text = "Placeholder"
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont(name: "Formula1 Display Regular", size: 20)
+        label.font = UIFont(name: "Formula1 Display Regular",
+                            size: 20)
         label.textColor = .white
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -39,7 +40,8 @@ class YourProfileViewController: UIViewController,
     let signInLabel: UILabel = {
         let label = UILabel()
         label.text = "Please select a method to login"
-        label.font = UIFont(name: "Formula1 Display Regular", size: 20)
+        label.font = UIFont(name: "Formula1 Display Regular",
+                            size: 20)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -47,9 +49,12 @@ class YourProfileViewController: UIViewController,
 
     //MARK: Sign in buttons properties
     let signInWithAppleButton: ASAuthorizationAppleIDButton = {
-        let button = ASAuthorizationAppleIDButton(type: .signIn, style: .white)
+        let button = ASAuthorizationAppleIDButton(type: .signIn,
+                                                  style: .white)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(startAppleIDAuthentication), for: .touchUpInside)
+        button.addTarget(self,
+                         action: #selector(startAppleIDAuthentication),
+                         for: .touchUpInside)
         return button
     }()
     
@@ -133,7 +138,8 @@ class YourProfileViewController: UIViewController,
         view.addSubview(signInLabel)
         
         NSLayoutConstraint.activate([
-            signInLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 350),
+            signInLabel.topAnchor.constraint(equalTo: view.topAnchor,
+                                             constant: 350),
             signInLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }

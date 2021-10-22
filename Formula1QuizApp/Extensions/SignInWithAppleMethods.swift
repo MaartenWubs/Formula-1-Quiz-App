@@ -24,7 +24,8 @@ extension YourProfileViewController: ASAuthorizationControllerDelegate {
         controller.performRequests()
     }
     
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithAuthorization authorization: ASAuthorization) {
         switch authorization.credential {
         case let appleIdCredentials as ASAuthorizationAppleIDCredential:
              userIdentifier = appleIdCredentials.user
@@ -42,7 +43,8 @@ extension YourProfileViewController: ASAuthorizationControllerDelegate {
         }
     }
     
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+    func authorizationController(controller: ASAuthorizationController,
+                                 didCompleteWithError error: Error) {
         //Handle Error
     }
     

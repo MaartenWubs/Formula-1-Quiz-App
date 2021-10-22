@@ -14,10 +14,11 @@ extension QuizViewController {
     func createAnswerButtons() {
         let buttonsArray = [answerButton1, answerButton2, answerButton3, answerButton4]
         for i in 0..<buttonsArray.count {
-            buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer, for: .normal)
+            buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer,
+                                     for: .normal)
             buttonsArray[i].setTitleFont(UIFont(name: "Formula1 Display Regular",
-                                       size: questions[answeredQuestions].answers[i].textSize),
-                                for: .normal)
+                                                size: questions[answeredQuestions].answers[i].textSize),
+                                         for: .normal)
             buttonsArray[i].tag = i
             
         }
@@ -29,7 +30,9 @@ extension QuizViewController {
             
             button.titleLabel?.lineBreakStrategy = .standard
             button.layer.cornerRadius = 10
-            button.addTarget(self, action: #selector(buttonePressed), for: .touchUpInside)
+            button.addTarget(self,
+                             action: #selector(buttonePressed),
+                             for: .touchUpInside)
             view.addSubview(button)
         }
         
@@ -91,10 +94,11 @@ extension QuizViewController {
         questionLabel.textColor = .white
         
         for i in 0..<buttonsArray.count {
-            buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer, for: .normal)
+            buttonsArray[i].setTitle(questions[answeredQuestions].answers[i].answer,
+                                     for: .normal)
             buttonsArray[i].setTitleFont(UIFont(name: "Formula1 Display Regular",
-                                       size: questions[answeredQuestions].answers[i].textSize),
-                                for: .normal)
+                                                size: questions[answeredQuestions].answers[i].textSize),
+                                         for: .normal)
         }
         
         image.image = UIImage(named: questions[answeredQuestions].image ?? "")
@@ -141,8 +145,10 @@ extension QuizViewController {
         NSLayoutConstraint.activate([
             backgroundImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             backgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            quitButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 55),
-            quitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+            quitButton.topAnchor.constraint(equalTo: view.topAnchor,
+                                            constant: 55),
+            quitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor,
+                                                 constant: -20)
         ])
         
         

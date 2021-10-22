@@ -117,20 +117,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YX5-aA-ivc">
-                                <rect key="frame" x="20" y="652" width="374" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="1yp-lo-oho"/>
-                                </constraints>
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Exit">
-                                    <fontDescription key="titleFontDescription" name="Formula1-Display-Wide" family="Formula1" pointSize="15"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="pressedExit:" destination="8lG-bX-ZXr" eventType="touchUpInside" id="H9V-3t-f1L"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dxf-bh-zIc"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -143,16 +129,12 @@
                             <constraint firstItem="VBG-4H-WlR" firstAttribute="leading" secondItem="WqR-4o-kLw" secondAttribute="leading" id="NVT-aS-t1e"/>
                             <constraint firstItem="VBG-4H-WlR" firstAttribute="top" secondItem="dxf-bh-zIc" secondAttribute="top" constant="44" id="QAV-R5-tTj"/>
                             <constraint firstItem="WqR-4o-kLw" firstAttribute="trailing" secondItem="zzO-sC-9CT" secondAttribute="trailing" id="XIZ-5S-hHW"/>
-                            <constraint firstItem="dxf-bh-zIc" firstAttribute="bottom" secondItem="YX5-aA-ivc" secondAttribute="bottom" constant="158" id="ZbJ-7w-lJh"/>
-                            <constraint firstItem="zzO-sC-9CT" firstAttribute="trailing" secondItem="YX5-aA-ivc" secondAttribute="trailing" id="kK6-VJ-vlf"/>
                             <constraint firstItem="zzO-sC-9CT" firstAttribute="top" secondItem="WqR-4o-kLw" secondAttribute="bottom" constant="41" id="mC5-w7-sX2"/>
-                            <constraint firstItem="zzO-sC-9CT" firstAttribute="leading" secondItem="YX5-aA-ivc" secondAttribute="leading" id="ucE-GB-qkk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="amountOfQuestionsAnsweredLabel" destination="WqR-4o-kLw" id="LbY-OD-YhW"/>
                         <outlet property="bacgroundImage" destination="5Rk-2V-eWb" id="RnE-5d-iNk"/>
-                        <outlet property="exitButton" destination="YX5-aA-ivc" id="P9b-vk-LOC"/>
                         <outlet property="scoreTitleLabel" destination="VBG-4H-WlR" id="Tnq-J9-3Kx"/>
                         <outlet property="totalScoreLabel" destination="zzO-sC-9CT" id="JQr-LA-505"/>
                     </connections>

@@ -103,10 +103,10 @@ class CurrentSeasonQuestions {
 //6.
         Question(ask: "What was new this season during a Formula 1 weekend?",
                  answers: [
-                    Answer(answer: "Drivers were not allowed to walk through the paddock",
+                    Answer(answer: "Drivers were cannot to walk through the paddock",
                            correctness: false,
                            textSize: 10),
-                    Answer(answer: "We had sprint qualifing for a couple of races",
+                    Answer(answer: "This was the first time with sprit qualifying",
                            correctness: true,
                            textSize: 12),
                     Answer(answer: "The race was made longer",
@@ -130,7 +130,7 @@ class CurrentSeasonQuestions {
                     Answer(answer: "He changed his engine",
                            correctness: true,
                            textSize: 15),
-                    Answer(answer: "He made a mean comment during press interviews",
+                    Answer(answer: "He made a mean comment over the radio",
                            correctness: false,
                            textSize: 12)
                  ],
@@ -141,16 +141,16 @@ class CurrentSeasonQuestions {
                  answers: [
                     Answer(answer: "It was Lewis Hamilton's 100th Grand Prix victory",
                            correctness: false,
-                           textSize: 15),
+                           textSize: 10),
                     Answer(answer: "It was the highest finish for Williams",
                            correctness: false,
-                           textSize: 15),
+                           textSize: 12),
                     Answer(answer: "It was the first victory for Carlos Sainz",
                            correctness: false,
-                           textSize: 15),
+                           textSize: 12),
                     Answer(answer: "It was McLaren's first 1, 2 finish since a long time",
                            correctness: true,
-                           textSize: 12)
+                           textSize: 10)
                  ],
                  image: nil,
                  category: "Current Season"),
@@ -159,7 +159,7 @@ class CurrentSeasonQuestions {
                  answers: [
                     Answer(answer: "The team was unable to get the tire of the car",
                            correctness: true,
-                           textSize: 15),
+                           textSize: 10),
                     Answer(answer: "His steering wheel came of the car",
                            correctness: false,
                            textSize: 15),
@@ -201,7 +201,7 @@ class CurrentSeasonQuestions {
                            textSize: 15),
                     Answer(answer: "They did that as thank you to Honda.",
                            correctness: true,
-                           textSize: 15),
+                           textSize: 12),
                     Answer(answer: "",
                            correctness: false,
                            textSize: 15)
@@ -267,13 +267,13 @@ class CurrentSeasonQuestions {
                  answers: [
                     Answer(answer: "He took the 200th GP victory for a British driver",
                            correctness: false,
-                           textSize: 15),
+                           textSize: 10),
                     Answer(answer: "He won the opening race of the year for the first time since 2015",
                            correctness: true,
-                           textSize: 15),
+                           textSize: 10),
                     Answer(answer: "He moved into second in the all-time laps led list behind Michael Schumacher",
                            correctness: false,
-                           textSize: 15),
+                           textSize: 10),
                     Answer(answer: "He took his 50th win for Mercedes",
                            correctness: false,
                            textSize: 15)

@@ -57,7 +57,8 @@ class ScoreViewController: UIViewController {
             bacgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             exitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             exitButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 250),
-            exitButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -30)
+            exitButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -30),
+            exitButton.heightAnchor.constraint(equalToConstant: 60)
         ])
     }
     

@@ -61,7 +61,7 @@ class QuizViewController: UIViewController {
     //MARK: View Code
     override func viewDidLoad() {
         super.viewDidLoad()
-        quiz.shuffle()
+        //quiz.shuffle()
         questions.append(contentsOf: quiz.prefix(upTo: 20))
         createAnswerButtons()
         askQuestion()

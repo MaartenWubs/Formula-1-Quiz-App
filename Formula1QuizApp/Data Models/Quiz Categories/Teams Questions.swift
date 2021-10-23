@@ -1,13 +1,13 @@
 //
-//  Driver Questions.swift
+//  Teams Questions.swift
 //  Formula1QuizApp
 //
-//  Created by Maarten Wubs on 10/17/21.
+//  Created by Maarten Wubs on 10/23/21.
 //
 
 import Foundation
 
-class DriversQuestions {
+class TeamsQuestions {
     public let questions = [
         Question(ask: "",
                  answers: [
@@ -25,8 +25,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -43,8 +42,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -61,8 +59,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -79,8 +76,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -97,8 +93,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -115,8 +110,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -133,8 +127,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -151,8 +144,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -169,8 +161,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -187,8 +178,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -205,8 +195,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -223,8 +212,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -241,8 +229,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -259,8 +246,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -277,8 +263,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -295,8 +280,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -313,8 +297,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -331,8 +314,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -349,8 +331,7 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        
+                 category: "Teams"),
         Question(ask: "",
                  answers: [
                     Answer(answer: "",
@@ -367,6 +348,40 @@ class DriversQuestions {
                            textSize: 15)
                  ],
                  image: nil,
-                 category: "Drivers"),
-        ]
+                 category: "Teams"),
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15)
+                 ],
+                 image: nil,
+                 category: "Teams"),
+        Question(ask: "",
+                 answers: [
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15),
+                    Answer(answer: "",
+                           correctness: false,
+                           textSize: 15)
+                 ],
+                 image: nil,
+                 category: "Teams"),
+    ]
 }

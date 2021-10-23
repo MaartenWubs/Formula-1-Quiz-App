@@ -14,7 +14,7 @@ extension CategoryViewController {
     
     /// This method creates the buttons for each quiz category
     public func createButtons() {
-        let arrayOfButtons = [self.currentSeasonButton, self.historyQuizButton, self.driverQuizButton]
+        let arrayOfButtons = [self.currentSeasonButton, self.historyQuizButton, self.driverQuizButton, self.teamsQuizButton]
         
         for button in arrayOfButtons {
             button.setBackgroundColor(.red)
@@ -42,7 +42,11 @@ extension CategoryViewController {
             self.driverQuizButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             self.driverQuizButton.topAnchor.constraint(equalTo: self.historyQuizButton.bottomAnchor,
                                                       constant: 20),
-            self.driverQuizButton.widthAnchor.constraint(equalTo: self.currentSeasonButton.widthAnchor)
+            self.driverQuizButton.widthAnchor.constraint(equalTo: self.currentSeasonButton.widthAnchor),
+            self.teamsQuizButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            self.teamsQuizButton.topAnchor.constraint(equalTo: self.driverQuizButton.bottomAnchor,
+                                                     constant: 20),
+            self.teamsQuizButton.widthAnchor.constraint(equalTo: self.currentSeasonButton.widthAnchor)
         ])
         
     }
@@ -66,7 +70,9 @@ extension CategoryViewController {
         } else if sender.tag == 1 {
             quizView.quiz = quiz.historyQuiz.questions
         } else if sender.tag == 2 {
-            //quizView.quiz = quiz.driversQuiz.questions
+            quizView.quiz = quiz.driversQuiz.questions
+        } else if sender.tag == 3 {
+            quizView.quiz = quiz.teamsQuiz.questions
         }
         
         //present the new view

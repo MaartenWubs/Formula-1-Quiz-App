@@ -34,6 +34,13 @@ class CategoryViewController: UIViewController {
                         for: .normal)
         return button
     }()
+    var teamsQuizButton: MDCButton = {
+        let button = MDCButton()
+        button.tag = 3
+        button.setTitle("Teams Quiz",
+                        for: .normal)
+        return button
+    }()
 
     let quiz = QuizModel()
     

@@ -38,6 +38,7 @@
 		3294D7CC2719B51E00D9CCE0 /* Formula1-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */; };
 		3294D7CD2719B51E00D9CCE0 /* Formula1-Wide.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3294D7CA2719B51E00D9CCE0 /* Formula1-Wide.otf */; };
 		3294D7CF2719BC0100D9CCE0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */; };
+		32D202142724BE2C005AF0A1 /* Teams Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D202132724BE2C005AF0A1 /* Teams Questions.swift */; };
 		32E11228271F661700E7CAA3 /* FacebookLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E11227271F661700E7CAA3 /* FacebookLoginButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		3294D7C92719B51E00D9CCE0 /* Formula1-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Regular.otf"; sourceTree = "<group>"; };
 		3294D7CA2719B51E00D9CCE0 /* Formula1-Wide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Formula1-Wide.otf"; sourceTree = "<group>"; };
 		3294D7CE2719BC0100D9CCE0 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		32D202132724BE2C005AF0A1 /* Teams Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Teams Questions.swift"; sourceTree = "<group>"; };
 		32E11227271F661700E7CAA3 /* FacebookLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginButton.swift; sourceTree = "<group>"; };
 		5D4034AAD04F44746F2DB477 /* Pods-Formula1QuizApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula1QuizApp.release.xcconfig"; path = "Target Support Files/Pods-Formula1QuizApp/Pods-Formula1QuizApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8D2D09D1D60F4D5C5524EB6 /* Pods-Formula1QuizApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Formula1QuizApp.debug.xcconfig"; path = "Target Support Files/Pods-Formula1QuizApp/Pods-Formula1QuizApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				32474C8C270DD48400B5DAB5 /* Current Season Questions.swift */,
 				32474C8E270DD9A600B5DAB5 /* History Questions.swift */,
 				324F8AAF271C12E3004423D2 /* Driver Questions.swift */,
+				32D202132724BE2C005AF0A1 /* Teams Questions.swift */,
 			);
 			path = "Quiz Categories";
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				326600D127205FE1001DC45B /* QuizHandlers.swift in Sources */,
 				32474C73270DCC3000B5DAB5 /* AppDelegate.swift in Sources */,
 				32474C88270DCCAA00B5DAB5 /* Data Models.swift in Sources */,
+				32D202142724BE2C005AF0A1 /* Teams Questions.swift in Sources */,
 				32E11228271F661700E7CAA3 /* FacebookLoginButton.swift in Sources */,
 				32474C75270DCC3000B5DAB5 /* SceneDelegate.swift in Sources */,
 				324F8AB4271E9B45004423D2 /* LeaderBoardViewController.swift in Sources */,

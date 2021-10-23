@@ -11,4 +11,5 @@ class QuizModel {
     public let currentSeasonQuiz = CurrentSeasonQuestions()
     public let historyQuiz = HistoryQuestions()
     public let driversQuiz = DriversQuestions()
+    public let teamsQuiz = TeamsQuestions()
 }

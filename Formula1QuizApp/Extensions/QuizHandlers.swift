@@ -11,6 +11,8 @@ import MaterialComponents
 
 extension QuizViewController {
     
+    /// This method creates al the answer buttons and will set al the properties,
+    /// including the layout constraints to correclty position the buttons on the screen.
     func createAnswerButtons() {
         let buttonsArray = [answerButton1, answerButton2, answerButton3, answerButton4]
         for i in 0..<buttonsArray.count {
@@ -64,6 +66,13 @@ extension QuizViewController {
     }
     
     @objc
+    /// This function will get called when ever one of the answer buttons is pressed. This
+    /// code will check if the answer that is pressed is correct by the assinged tag from each
+    /// button. It will then chagne the score acoordingly. It also adds one to the amount of questions
+    /// answered property. As long as the property has a value below 20 it will fetch the next question
+    /// else it will call the endQuiz method
+    ///
+    /// - Parameter sender: The button that is pressed.
     func buttonePressed(_ sender: MDCButton) {
         //Code logic to calculate score
         print(questions[answeredQuestions].answers[sender.tag].correctness)
@@ -84,6 +93,8 @@ extension QuizViewController {
     }
     
     @objc
+    /// This method fetches the next questions from the array of questions that is created
+    /// when the quiz is started.
     func askQuestion() {
         
         let buttonsArray = [answerButton1, answerButton2, answerButton3, answerButton4]
@@ -117,6 +128,9 @@ extension QuizViewController {
     }
     
     @objc
+    /// This method is called when the player presses that quit button. It will rest all the scores
+    /// and show the category view again.
+    /// - Parameter sender: The button that is pressed
     func pressedQuit(_ sender: MDCButton) {
         //reset scores
         answeredQuestions = 0

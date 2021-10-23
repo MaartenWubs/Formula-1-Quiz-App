@@ -11,7 +11,8 @@ import MaterialComponents
 
 extension CategoryViewController {
     
-        
+    
+    /// This method creates the buttons for each quiz category
     public func createButtons() {
         let arrayOfButtons = [self.currentSeasonButton, self.historyQuizButton, self.driverQuizButton]
         
@@ -47,6 +48,9 @@ extension CategoryViewController {
     }
     
     @objc
+    /// This method gets called when one of the quiz buttons is pressed and will start the quiz.
+    /// Depending on the teg of the button it wil load the follwong quiz.
+    /// - Parameter sender: The button that is pressed.
     func quizButtonPressed(_ sender: MDCButton) {
         print("pressed") //DEBUG purposes
         

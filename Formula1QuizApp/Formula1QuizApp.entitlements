@@ -10,5 +10,7 @@
 	<array>
 		<string>webcredentials:example.com</string>
 	</array>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array/>
 </dict>
 </plist>

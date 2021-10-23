@@ -22,6 +22,8 @@ class ScoreViewController: UIViewController {
     let exitButton: MDCButton = {
         let button = MDCButton()
         button.setBackgroundColor(.red)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 10
         button.setTitle("Exit",
                         for: .normal)
         button.setTitleFont(UIFont(name: "Formula1 Display Regular",
@@ -37,6 +39,7 @@ class ScoreViewController: UIViewController {
         super.viewDidLoad()
         bacgroundImage.layer.opacity = 0.3
         bacgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(exitButton)
         
         if endScore > 70 {
             scoreTitleLabel.text = "Congratulations"
@@ -51,7 +54,10 @@ class ScoreViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             bacgroundImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            bacgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            bacgroundImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            exitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            exitButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 250),
+            exitButton.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -30)
         ])
     }
     
